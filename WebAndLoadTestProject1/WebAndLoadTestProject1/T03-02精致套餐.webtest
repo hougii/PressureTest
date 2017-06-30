@@ -1,0 +1,637 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WebTest Name="T03-02精致套餐" Id="9e0e9d82-9a7c-4caa-b9e9-d0eb901c33a6" Owner="" Priority="2147483647" Enabled="True" CssProjectStructure="" CssIteration="" Timeout="0" WorkItemIds="" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010" Description="" CredentialUserName="" CredentialPassword="" PreAuthenticate="True" Proxy="default" StopOnError="False" RecordedResultFile="T03-02精致套餐.15e14a98-03d4-4af8-b097-8f2b0deccc74.rec.webtestresult" ResultsLocale="">
+  <Items>
+    <Request Method="GET" Guid="c034827e-7929-40b6-a53b-322a4786754f" Version="1.1" Url="http://13.94.24.201/" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <ExtractionRules>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractHiddenFields, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="1" DisplayName="擷取隱藏欄位" Description="擷取回應中的所有隱藏欄位，並將它們放在測試內容中。">
+          <RuleParameters>
+            <RuleParameter Name="Required" Value="True" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+          </RuleParameters>
+        </ExtractionRule>
+      </ExtractionRules>
+      <CorrelationExtractionRules>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractFormField, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="FormPostParam1.btnLogin" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="Name" Value="btnLogin" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+            <RuleParameter Name="Index" Value="0" />
+          </RuleParameters>
+        </ExtractionRule>
+      </CorrelationExtractionRules>
+    </Request>
+    <Request Method="POST" Guid="98357963-5086-49a3-9125-26f7ffb72404" Version="1.1" Url="http://13.94.24.201/" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Referer" Value="http://13.94.24.201/" />
+      </Headers>
+      <FormPostHttpBody>
+        <FormPostParameter Name="__VIEWSTATE" Value="{{$HIDDEN1.__VIEWSTATE}}" RecordedValue="/wEPDwUKLTQ2MDkxMDM3MmRkYD6gveoK0ahEGQQgeXgVMbqfG75DUc0x/Eky67ckaKc=" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="__VIEWSTATEGENERATOR" Value="{{$HIDDEN1.__VIEWSTATEGENERATOR}}" RecordedValue="C2EE9ABB" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="__EVENTVALIDATION" Value="{{$HIDDEN1.__EVENTVALIDATION}}" RecordedValue="/wEdAATEqFaCoeQXbUhsbfEmpYzVWdyjOOJja56tPh/KF/Iuy5E7jBuv1cMAuKbQEfI96LqinihG6d/Xh3PZm3b5AoMQ8o0jdKSBbQo6Ufv8/WS4x9cc+HO2RengzCNQbzK00gM=" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="txtID" Value="itts" RecordedValue="itts" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="txtPW" Value="12qaz" RecordedValue="12qaz" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="btnLogin" Value="登入Sign In" RecordedValue="登入Sign In" CorrelationBinding="{{FormPostParam1.btnLogin}}" UrlEncode="True" />
+      </FormPostHttpBody>
+    </Request>
+    <Request Method="GET" Guid="89229bb4-6b18-4c60-a000-109d3aff2413" Version="1.1" Url="http://13.94.24.201/CS/Order1.aspx" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <DependentRequests>
+        <Request Method="GET" Guid="b688e756-1228-4360-b644-8198846270e7" Version="1.1" Url="http://csi.gstatic.com/csi" ThinkTime="3" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Referer" Value="http://13.94.24.201/CS/Order1.aspx" />
+          </Headers>
+          <QueryStringParameters>
+            <QueryStringParameter Name="v" Value="2" RecordedValue="2" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="s" Value="mapsapi3" RecordedValue="mapsapi3" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="v3v" Value="29.8" RecordedValue="29.8" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="action" Value="apiboot2" RecordedValue="apiboot2" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="e" Value="10_1_0,10_2_0" RecordedValue="10_1_0,10_2_0" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="rt" Value="main.17" RecordedValue="main.17" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+          </QueryStringParameters>
+        </Request>
+      </DependentRequests>
+      <ExtractionRules>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractHiddenFields, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="1" DisplayName="擷取隱藏欄位" Description="擷取回應中的所有隱藏欄位，並將它們放在測試內容中。">
+          <RuleParameters>
+            <RuleParameter Name="Required" Value="True" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+          </RuleParameters>
+        </ExtractionRule>
+      </ExtractionRules>
+      <CorrelationExtractionRules>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractFormField, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="FormPostParam3.ctl00$ContentPlaceHolder1$radlSex" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="Name" Value="ctl00_ContentPlaceHolder1_radlSex_0" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+            <RuleParameter Name="Index" Value="0" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractFormField, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="FormPostParam4.ctl00$ContentPlaceHolder1$radlDeliverType" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="Name" Value="ctl00_ContentPlaceHolder1_radlDeliverType_0" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+            <RuleParameter Name="Index" Value="0" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractFormField, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="FormPostParam5.ctl00$ContentPlaceHolder1$radlDeliverTimeSelect" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="Name" Value="ctl00_ContentPlaceHolder1_radlDeliverTimeSelect_0" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+            <RuleParameter Name="Index" Value="0" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractFormField, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="FormPostParam6.ctl00$ContentPlaceHolder1$btnSearchStore" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="Name" Value="ctl00_ContentPlaceHolder1_btnSearchStore" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+            <RuleParameter Name="Index" Value="0" />
+          </RuleParameters>
+        </ExtractionRule>
+      </CorrelationExtractionRules>
+    </Request>
+    <Request Method="POST" Guid="a79e3eda-5b9c-44e4-be1d-275fdfd5627a" Version="1.1" Url="http://13.94.24.201/CS/Order1.aspx" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="X-Requested-With" Value="XMLHttpRequest" />
+        <Header Name="X-MicrosoftAjax" Value="Delta=true" />
+        <Header Name="Referer" Value="http://13.94.24.201/CS/Order1.aspx" />
+      </Headers>
+      <ExtractionRules>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractHiddenFields, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="2" DisplayName="擷取隱藏欄位" Description="擷取回應中的所有隱藏欄位，並將它們放在測試內容中。">
+          <RuleParameters>
+            <RuleParameter Name="Required" Value="True" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+          </RuleParameters>
+        </ExtractionRule>
+      </ExtractionRules>
+      <CorrelationExtractionRules>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractFormField, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="FormPostParam7.ctl00$ContentPlaceHolder1$txtAreaCode" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="Name" Value="ctl00_ContentPlaceHolder1_txtAreaCode" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+            <RuleParameter Name="Index" Value="0" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractFormField, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="FormPostParam8.ctl00$ContentPlaceHolder1$txtTel" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="Name" Value="ctl00_ContentPlaceHolder1_txtTel" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+            <RuleParameter Name="Index" Value="0" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractFormField, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="FormPostParam9.ctl00$ContentPlaceHolder1$txtCustName" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="Name" Value="ctl00_ContentPlaceHolder1_txtCustName" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+            <RuleParameter Name="Index" Value="0" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractFormField, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="FormPostParam10.ctl00$ContentPlaceHolder1$radlSex" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="Name" Value="ctl00_ContentPlaceHolder1_radlSex_0" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+            <RuleParameter Name="Index" Value="0" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractFormField, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="FormPostParam11.ctl00$ContentPlaceHolder1$radlDeliverType" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="Name" Value="ctl00_ContentPlaceHolder1_radlDeliverType_0" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+            <RuleParameter Name="Index" Value="0" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractFormField, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="FormPostParam12.ctl00$ContentPlaceHolder1$radlDeliverTimeSelect" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="Name" Value="ctl00_ContentPlaceHolder1_radlDeliverTimeSelect_0" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+            <RuleParameter Name="Index" Value="0" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractFormField, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="FormPostParam13.ctl00$ContentPlaceHolder1$txtSearch" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="Name" Value="ctl00_ContentPlaceHolder1_txtSearch" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+            <RuleParameter Name="Index" Value="0" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractFormField, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="FormPostParam14.ctl00$ContentPlaceHolder1$btnNext" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="Name" Value="ctl00_ContentPlaceHolder1_btnNext" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+            <RuleParameter Name="Index" Value="0" />
+          </RuleParameters>
+        </ExtractionRule>
+      </CorrelationExtractionRules>
+      <FormPostHttpBody>
+        <FormPostParameter Name="ctl00$ScriptManager1" Value="ctl00$ContentPlaceHolder1$UpdatePanel2|ctl00$ContentPlaceHolder1$btnSearchStore" RecordedValue="ctl00$ContentPlaceHolder1$UpdatePanel2|ctl00$ContentPlaceHolder1$btnSearchStore" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="__EVENTTARGET" Value="{{$HIDDEN1.__EVENTTARGET}}" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="__EVENTARGUMENT" Value="{{$HIDDEN1.__EVENTARGUMENT}}" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="__LASTFOCUS" Value="{{$HIDDEN1.__LASTFOCUS}}" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="__VIEWSTATE" Value="{{$HIDDEN1.__VIEWSTATE}}" RecordedValue="/wEPDwUKMTA3OTQ2MjM3Mg9kFgJmD2QWAgIDD2QWCAIFDw8WAh4EVGV4dAUEaXR0c2RkAgkPDxYCHwAFBGl0dHNkZAINDxYCHgdWaXNpYmxlZ2QCEw9kFgoCAQ9kFgJmD2QWEgIBDw9kFgIeCW9ua2V5ZG93bgVjaWYoZXZlbnQua2V5Q29kZSA9PSAxMykgZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ2N0bDAwX0NvbnRlbnRQbGFjZUhvbGRlcjFfYnRuU2VhcmNoT3JkZXInKS5mb2N1cygpZAIDDw9kFgIfAgVjaWYoZXZlbnQua2V5Q29kZSA9PSAxMykgZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ2N0bDAwX0NvbnRlbnRQbGFjZUhvbGRlcjFfYnRuU2VhcmNoT3JkZXInKS5mb2N1cygpZAIFDw9kFgIfAgVjaWYoZXZlbnQua2V5Q29kZSA9PSAxMykgZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ2N0bDAwX0NvbnRlbnRQbGFjZUhvbGRlcjFfYnRuU2VhcmNoT3JkZXInKS5mb2N1cygpZAINDw9kFgIfAgVjaWYoZXZlbnQua2V5Q29kZSA9PSAxMykgZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ2N0bDAwX0NvbnRlbnRQbGFjZUhvbGRlcjFfYnRuU2VhcmNoU3RvcmUnKS5mb2N1cygpZAIPDxAPFgYeDURhdGFUZXh0RmllbGQFCkNob2ljZU5hbWUeDkRhdGFWYWx1ZUZpZWxkBQtDaG9pY2VWYWx1ZR4LXyFEYXRhQm91bmRnZBAVAgblhYjnlJ8G5bCP5aeQFQIBTQFGFCsDAmdnZGQCFw8QDxYGHwMFCkNob2ljZU5hbWUfBAULQ2hvaWNlVmFsdWUfBWdkEBUGDOWIsOW6l+WPluiyqAblhafnlKgG6LuK6YGTBumkqOmAgQboo5zllq4G5aSW6YCBFQYBMQEyATMBNAE1ATYUKwMGZ2dnZ2dnFgFmZAIZDxAPFgYfAwUKQ2hvaWNlTmFtZR8EBQtDaG9pY2VWYWx1ZR8FZ2QQFQIM57O757Wx6aCQ5a6aDOmhp+WuouaMh+WumhUCATABMRQrAwJnZxYBZmQCGw8WAh8BaGQCHQ8WAh8BaBYEAgEPFgIfAWhkAgMPZBYGAgEPEGRkFgBkAgMPEGRkFgBkAgUPEGRkFgBkAgMPZBYCZg9kFgQCAQ8PFgIfAWhkZAIDDw8WAh4HRW5hYmxlZGhkZAIFD2QWAmYPZBYEAgMPPCsAEQIBEBYAFgAWAAwUKwAAZAIFDzwrABECARAWABYAFgAMFCsAAGQCBw9kFgJmD2QWCAIBDw9kFgIfAgVjaWYoZXZlbnQua2V5Q29kZSA9PSAxMykgZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ2N0bDAwX0NvbnRlbnRQbGFjZUhvbGRlcjFfYnRuU2VhcmNoU3RvcmUnKS5mb2N1cygpZAIFDzwrABECARAWABYAFgAMFCsAAGQCDQ9kFgICAQ88KwARAgEQFgAWABYADBQrAABkAiMPDxYCHghJbWFnZVVybAUsL0FwcF9UaGVtZXMvQmFzaWNfVGhlbWUvTWFwL0RlZmF1bHRQaG90by5naWZkZAIJD2QWAmYPZBYCZg9kFgICBQ9kFg4CBw8QZGQWAGQCCQ8QZGQWAGQCCw8QZGQWAGQCDw88KwARAgEQFgAWABYADBQrAABkAhEPPCsAEQIBEBYAFgAWAAwUKwAAZAITDxBkZBYAZAIVDxBkZBYAZBgHBSFjdGwwMCRDb250ZW50UGxhY2VIb2xkZXIxJGd2U3RvcmUPZ2QFIWN0bDAwJENvbnRlbnRQbGFjZUhvbGRlcjEkZ3ZPcmRlcg9nZAUeX19Db250cm9sc1JlcXVpcmVQb3N0QmFja0tleV9fFgEFNWN0bDAwJENvbnRlbnRQbGFjZUhvbGRlcjEkdWNEZWxpdmVyMSRpYnRuQ2xvc2VXaW5kb3dzBSRjdGwwMCRDb250ZW50UGxhY2VIb2xkZXIxJGd2T3JkZXJPbGQPZ2QFJmN0bDAwJENvbnRlbnRQbGFjZUhvbGRlcjEkZ3ZTdG9yZVN0b2NrD2dkBTJjdGwwMCRDb250ZW50UGxhY2VIb2xkZXIxJHVjRGVsaXZlcjEkZ3ZEZWxpdmVyQWRkcg9nZAUvY3RsMDAkQ29udGVudFBsYWNlSG9sZGVyMSR1Y0RlbGl2ZXIxJGd2T3JkZXJPbGQPZ2Qbm+CMTnJNhqvQgs+JK7lL+OYQjxvweZoR8yKlAVKOFA==" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="__VIEWSTATEGENERATOR" Value="{{$HIDDEN1.__VIEWSTATEGENERATOR}}" RecordedValue="BDBAA6D6" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="__EVENTVALIDATION" Value="{{$HIDDEN1.__EVENTVALIDATION}}" RecordedValue="/wEdADIOlxf4Gdx0gXaynbNm29abEooBcVdbl3uEQaTVzC/0eptHBelCd+gvDm/As3EuQ0TYJFy69ei9/pMMJ6Nj4LvLH81ogzaUpoweOlc8r7YKSRAEpQ1Z0tqFQhUnRvLNik9lQ45xmUfu6D6zPTvCNzZf5+y2JTjp5KidI8/69Z8eWCNbc206/hLlX0ERXoboGyLeqdLJUEgz7O6Av1JpqrRB7ZBGWX4lCI4+XcFdXTyVydAC9TkRTulZiAsNG58QyzoSK+rsUGZoodQtngkr8Fmf8UFRaGYzLZRSCBZe+QBq1JhH4qPLDyDOTQx9D8Ak17BRk2M6r9beHYmoQZZLnNWXVnvqHtieoLV290lBgHsu2mhJFDhndmtLgQFaK9UQpEtcHMGsfORuenphlHEi/L2eZliQEKpqtMFdYqcI8H1kzNjn8tJPWHguLhjgnvGWqrU9AhLf7s2T0MX3WDOh0yLXPwwOIMDBdnAb7bkiaLwS7RFtKhCjKUCgiOcilmbiregx9vv/twcXcaUDLm1MAlnsGgOkRs/x0nQgsaQ72sj7qg5BDG3s2Di/t1u4iwlUf7Pmu0QalfO7n/8ZV+8I+EdiZaDDAy+z8H91KrNSXqE6KiwN8yFCwg1ocLW6JA24oBB1Us6ERdS5A1DkmSMH+tS1aBwXRm2vVpAvHGJzvP/UgvLIB79rJY8+DxG4pu+hv/zpNbg+KVQVeL27lI0Fw45Ap5H7ngn0XTU68xnO2CwWTlqlF94DdxZ65Hg0BNKZS+O34ofm936IIw8K6ikCtpi96mGmItnq9kdAUjGvNrnik6GW/qApfEI2sxleM1foqXs0sYa9YH97aXTwaD06QmsJrco2UXa5dOjBCmDCGdjqysLduri/7q2Sp90+w7re2tAlsql5yFhgMmIm57RE4WbjQCTHdp9P4Tb5IKp2YpxpVyBEMxx03STsUc2cRRChUi7rIxQRuaU8x5BaBf5fuaB9DxBNxWEOEDEp9RqhwcbSI02VYPqzljPiZWxL6Hx8Wrj7nimJOuyFeWZU6bJMY7dn6FBRKBYMJdyk8an5qqMMLAVVieAUIJDXd/LBTK1b4OMbX23dclcfhzR2ol9k3MBX" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="ctl00$ContentPlaceHolder1$txtAreaCode" Value="0920" RecordedValue="0920" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="ctl00$ContentPlaceHolder1$txtTel" Value="123456" RecordedValue="123456" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="ctl00$ContentPlaceHolder1$txtTelExt" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="ctl00$ContentPlaceHolder1$txtVAT" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="ctl00$ContentPlaceHolder1$txtCustName" Value="Ricky2" RecordedValue="Ricky2" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="ctl00$ContentPlaceHolder1$radlSex" Value="M" RecordedValue="M" CorrelationBinding="{{FormPostParam3.ctl00$ContentPlaceHolder1$radlSex}}" UrlEncode="True" />
+        <FormPostParameter Name="ctl00$ContentPlaceHolder1$radlDeliverType" Value="1" RecordedValue="1" CorrelationBinding="{{FormPostParam4.ctl00$ContentPlaceHolder1$radlDeliverType}}" UrlEncode="True" />
+        <FormPostParameter Name="ctl00$ContentPlaceHolder1$radlDeliverTimeSelect" Value="0" RecordedValue="0" CorrelationBinding="{{FormPostParam5.ctl00$ContentPlaceHolder1$radlDeliverTimeSelect}}" UrlEncode="True" />
+        <FormPostParameter Name="ctl00$ContentPlaceHolder1$hiddMemo" Value="{{$HIDDEN1.ctl00$ContentPlaceHolder1$hiddMemo}}" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="ctl00$ContentPlaceHolder1$hiddSearchState" Value="{{$HIDDEN1.ctl00$ContentPlaceHolder1$hiddSearchState}}" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="ctl00$ContentPlaceHolder1$txtSearch" Value="B260" RecordedValue="B260" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="ctl00$ContentPlaceHolder1$hiddCallBack" Value="{{$HIDDEN1.ctl00$ContentPlaceHolder1$hiddCallBack}}" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="ctl00$ContentPlaceHolder1$hiddCallBackBDate" Value="{{$HIDDEN1.ctl00$ContentPlaceHolder1$hiddCallBackBDate}}" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="ctl00$ContentPlaceHolder1$hiddCallBackEDate" Value="{{$HIDDEN1.ctl00$ContentPlaceHolder1$hiddCallBackEDate}}" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="ctl00$ContentPlaceHolder1$ucDeliver1$hiddPopup" Value="{{$HIDDEN1.ctl00$ContentPlaceHolder1$ucDeliver1$hiddPopup}}" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="ctl00$ContentPlaceHolder1$ucDeliver1$txtRoadSearch" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="ctl00$ContentPlaceHolder1$ucDeliver1$txtAlley" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="ctl00$ContentPlaceHolder1$ucDeliver1$txtLane" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="ctl00$ContentPlaceHolder1$ucDeliver1$txtNo1" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="ctl00$ContentPlaceHolder1$ucDeliver1$txtNo2" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="ctl00$ContentPlaceHolder1$ucDeliver1$txtFloor" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="ctl00$ContentPlaceHolder1$ucDeliver1$txtChild" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="ctl00$ContentPlaceHolder1$ucDeliver1$txtMemo" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="ctl00$ContentPlaceHolder1$ucDeliver1$HidAddStore" Value="{{$HIDDEN1.ctl00$ContentPlaceHolder1$ucDeliver1$HidAddStore}}" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="ctl00$ContentPlaceHolder1$ucDeliver1$OrderLng" Value="{{$HIDDEN1.ctl00$ContentPlaceHolder1$ucDeliver1$OrderLng}}" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="ctl00$ContentPlaceHolder1$ucDeliver1$OrderLat" Value="{{$HIDDEN1.ctl00$ContentPlaceHolder1$ucDeliver1$OrderLat}}" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="__ASYNCPOST" Value="true" RecordedValue="true" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="ctl00$ContentPlaceHolder1$btnSearchStore" Value="查詢" RecordedValue="查詢" CorrelationBinding="{{FormPostParam6.ctl00$ContentPlaceHolder1$btnSearchStore}}" UrlEncode="True" />
+      </FormPostHttpBody>
+    </Request>
+    <Request Method="POST" Guid="c8798a8c-9baf-486b-abe3-ae0974e9eddd" Version="1.1" Url="http://13.94.24.201/CS/Order1.aspx" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="X-Requested-With" Value="XMLHttpRequest" />
+        <Header Name="X-MicrosoftAjax" Value="Delta=true" />
+        <Header Name="Referer" Value="http://13.94.24.201/CS/Order1.aspx" />
+      </Headers>
+      <FormPostHttpBody>
+        <FormPostParameter Name="ctl00$ScriptManager1" Value="ctl00$ContentPlaceHolder1$updbtnDeliver|ctl00$ContentPlaceHolder1$btnNext" RecordedValue="ctl00$ContentPlaceHolder1$updbtnDeliver|ctl00$ContentPlaceHolder1$btnNext" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="ctl00$ContentPlaceHolder1$txtAreaCode" Value="0920" RecordedValue="0920" CorrelationBinding="{{FormPostParam7.ctl00$ContentPlaceHolder1$txtAreaCode}}" UrlEncode="True" />
+        <FormPostParameter Name="ctl00$ContentPlaceHolder1$txtTel" Value="123456" RecordedValue="123456" CorrelationBinding="{{FormPostParam8.ctl00$ContentPlaceHolder1$txtTel}}" UrlEncode="True" />
+        <FormPostParameter Name="ctl00$ContentPlaceHolder1$txtTelExt" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="ctl00$ContentPlaceHolder1$txtVAT" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="ctl00$ContentPlaceHolder1$txtCustName" Value="Ricky2" RecordedValue="Ricky2" CorrelationBinding="{{FormPostParam9.ctl00$ContentPlaceHolder1$txtCustName}}" UrlEncode="True" />
+        <FormPostParameter Name="ctl00$ContentPlaceHolder1$radlSex" Value="M" RecordedValue="M" CorrelationBinding="{{FormPostParam10.ctl00$ContentPlaceHolder1$radlSex}}" UrlEncode="True" />
+        <FormPostParameter Name="ctl00$ContentPlaceHolder1$radlDeliverType" Value="1" RecordedValue="1" CorrelationBinding="{{FormPostParam11.ctl00$ContentPlaceHolder1$radlDeliverType}}" UrlEncode="True" />
+        <FormPostParameter Name="ctl00$ContentPlaceHolder1$radlDeliverTimeSelect" Value="0" RecordedValue="0" CorrelationBinding="{{FormPostParam12.ctl00$ContentPlaceHolder1$radlDeliverTimeSelect}}" UrlEncode="True" />
+        <FormPostParameter Name="ctl00$ContentPlaceHolder1$hiddMemo" Value="{{$HIDDEN2.ctl00$ContentPlaceHolder1$hiddMemo}}" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="ctl00$ContentPlaceHolder1$hiddSearchState" Value="{{$HIDDEN1.ctl00$ContentPlaceHolder1$hiddSearchState}}" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="ctl00$ContentPlaceHolder1$txtSearch" Value="B260" RecordedValue="B260" CorrelationBinding="{{FormPostParam13.ctl00$ContentPlaceHolder1$txtSearch}}" UrlEncode="True" />
+        <FormPostParameter Name="ctl00$ContentPlaceHolder1$hiddCallBack" Value="{{$HIDDEN2.ctl00$ContentPlaceHolder1$hiddCallBack}}" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="ctl00$ContentPlaceHolder1$hiddCallBackBDate" Value="{{$HIDDEN2.ctl00$ContentPlaceHolder1$hiddCallBackBDate}}" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="ctl00$ContentPlaceHolder1$hiddCallBackEDate" Value="{{$HIDDEN2.ctl00$ContentPlaceHolder1$hiddCallBackEDate}}" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="ctl00$ContentPlaceHolder1$ucDeliver1$hiddPopup" Value="{{$HIDDEN1.ctl00$ContentPlaceHolder1$ucDeliver1$hiddPopup}}" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="ctl00$ContentPlaceHolder1$ucDeliver1$txtRoadSearch" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="ctl00$ContentPlaceHolder1$ucDeliver1$txtAlley" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="ctl00$ContentPlaceHolder1$ucDeliver1$txtLane" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="ctl00$ContentPlaceHolder1$ucDeliver1$txtNo1" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="ctl00$ContentPlaceHolder1$ucDeliver1$txtNo2" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="ctl00$ContentPlaceHolder1$ucDeliver1$txtFloor" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="ctl00$ContentPlaceHolder1$ucDeliver1$txtChild" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="ctl00$ContentPlaceHolder1$ucDeliver1$txtMemo" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="ctl00$ContentPlaceHolder1$ucDeliver1$HidAddStore" Value="{{$HIDDEN1.ctl00$ContentPlaceHolder1$ucDeliver1$HidAddStore}}" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="ctl00$ContentPlaceHolder1$ucDeliver1$OrderLng" Value="{{$HIDDEN1.ctl00$ContentPlaceHolder1$ucDeliver1$OrderLng}}" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="ctl00$ContentPlaceHolder1$ucDeliver1$OrderLat" Value="{{$HIDDEN1.ctl00$ContentPlaceHolder1$ucDeliver1$OrderLat}}" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="__EVENTTARGET" Value="{{$HIDDEN2.__EVENTTARGET}}" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="__EVENTARGUMENT" Value="{{$HIDDEN2.__EVENTARGUMENT}}" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="__LASTFOCUS" Value="{{$HIDDEN2.__LASTFOCUS}}" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="__VIEWSTATE" Value="{{$HIDDEN2.__VIEWSTATE}}" RecordedValue="/wEPDwUKMTA3OTQ2MjM3Mg9kFgJmD2QWAgIDD2QWCAIFDw8WAh4EVGV4dAUEaXR0c2RkAgkPDxYCHwAFBGl0dHNkZAINDxYCHgdWaXNpYmxlZ2QCEw9kFgoCAQ9kFgJmD2QWFgIBDw9kFgIeCW9ua2V5ZG93bgVjaWYoZXZlbnQua2V5Q29kZSA9PSAxMykgZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ2N0bDAwX0NvbnRlbnRQbGFjZUhvbGRlcjFfYnRuU2VhcmNoT3JkZXInKS5mb2N1cygpZAIDDw9kFgIfAgVjaWYoZXZlbnQua2V5Q29kZSA9PSAxMykgZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ2N0bDAwX0NvbnRlbnRQbGFjZUhvbGRlcjFfYnRuU2VhcmNoT3JkZXInKS5mb2N1cygpZAIFDw9kFgIfAgVjaWYoZXZlbnQua2V5Q29kZSA9PSAxMykgZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ2N0bDAwX0NvbnRlbnRQbGFjZUhvbGRlcjFfYnRuU2VhcmNoT3JkZXInKS5mb2N1cygpZAINDw9kFgIfAgVjaWYoZXZlbnQua2V5Q29kZSA9PSAxMykgZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ2N0bDAwX0NvbnRlbnRQbGFjZUhvbGRlcjFfYnRuU2VhcmNoU3RvcmUnKS5mb2N1cygpZAIPDxAPFgYeDURhdGFUZXh0RmllbGQFCkNob2ljZU5hbWUeDkRhdGFWYWx1ZUZpZWxkBQtDaG9pY2VWYWx1ZR4LXyFEYXRhQm91bmRnZBAVAgblhYjnlJ8G5bCP5aeQFQIBTQFGFCsDAmdnZGQCEw8PFgIfAAUEQjI2MGRkAhUPDxYCHwAFCeadsea5luW6l2RkAhcPEA8WBh8DBQpDaG9pY2VOYW1lHwQFC0Nob2ljZVZhbHVlHwVnZBAVBgzliLDlupflj5bosqgG5YWn55SoBui7iumBkwbppKjpgIEG6KOc5ZauBuWklumAgRUGATEBMgEzATQBNQE2FCsDBmdnaGhnZxYBZmQCGQ8QDxYIHwMFCkNob2ljZU5hbWUfBAULQ2hvaWNlVmFsdWUfBWceB0VuYWJsZWRnZBAVAgzns7vntbHpoJDlrpoM6aGn5a6i5oyH5a6aFQIBMAExFCsDAmdnFgFmZAIbDxYCHwFnFgQCAQ8PFgQfAAUFMTU6NDMfAWdkZAIDDxYCHwBlZAIdDxYCHwFoFgQCAQ8WAh8BaGQCAw8PFgIfAWhkFgYCAQ8QZGQWAGQCAw8QZGQWAGQCBQ8QZGQWAGQCAw9kFgJmD2QWBAIBDw8WAh8BaGRkAgMPDxYCHwZnZGQCBQ9kFgJmD2QWBAIDDzwrABECARAWABYAFgAMFCsAAGQCBQ88KwARAgEQFgAWABYADBQrAABkAgcPZBYCZg9kFiQCAQ8PZBYCHwIFY2lmKGV2ZW50LmtleUNvZGUgPT0gMTMpIGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdjdGwwMF9Db250ZW50UGxhY2VIb2xkZXIxX2J0blNlYXJjaFN0b3JlJykuZm9jdXMoKWQCBQ88KwARAwAPFgQfBWceC18hSXRlbUNvdW50AgFkARAWABYAFgAMFCsAABYCZg9kFgQCAQ9kFgRmD2QWBAIBDw8WAh8ABQRCMjYwZGQCAw8PFggeD0NvbW1hbmRBcmd1bWVudAUEQjI2MB8ABQnmnbHmuZblupceCENzc0NsYXNzBQVTdG9yZR4EXyFTQgICZGQCAQ8PFgIfAAUJ5Y+w5YyX5biCZGQCAg8PFgIfAWhkZAIHDw8WAh8ABQRCMjYwZGQCCQ8PFgIfAAUJ5p2x5rmW5bqXZGQCCw9kFgICAQ8PFgIfAAUQNS8yMemWi+aUvuWklumAgWRkAg0PFgIfAWgWAgIBDzwrABECARAWABYAFgAMFCsAAGQCDw8PFgIfAAUJ5Y+w5YyX5biCZGQCEA8PFgIfAAUJ5YWn5rmW5Y2AZGQCEQ8PFgIfAAUP5p2x5rmW6LevMTEw6JmfZGQCEw8PFgIfAAUJ5p2x5rmW6LevZGQCFQ8PFgIfAAUM5p2x5rmW5ZyL5bCPZGQCFw8WAh8BaGQCGQ8WAh8BaGQCGw8PFgIfAAULMDYwMCAtIDIzMDBkZAIdDw8WAh8ABQswNjAwIC0gMjMwMGRkAh8PDxYCHwAFCzA2OjAwLTIxOjMwZGQCIQ8PFgIfAAUOKDAyKSAyNjMxLTUyNzNkZAIjDw8WAh4ISW1hZ2VVcmwFLC9BcHBfVGhlbWVzL0Jhc2ljX1RoZW1lL01hcC9EZWZhdWx0UGhvdG8uZ2lmZGQCCQ9kFgJmD2QWAmYPZBYCAgUPZBYOAgcPEGRkFgBkAgkPEGRkFgBkAgsPEGRkFgBkAg8PPCsAEQIBEBYAFgAWAAwUKwAAZAIRDzwrABECARAWABYAFgAMFCsAAGQCEw8QZGQWAGQCFQ8QZGQWAGQYBwUhY3RsMDAkQ29udGVudFBsYWNlSG9sZGVyMSRndlN0b3JlDzwrAAwBCAIBZAUhY3RsMDAkQ29udGVudFBsYWNlSG9sZGVyMSRndk9yZGVyD2dkBR5fX0NvbnRyb2xzUmVxdWlyZVBvc3RCYWNrS2V5X18WAQU1Y3RsMDAkQ29udGVudFBsYWNlSG9sZGVyMSR1Y0RlbGl2ZXIxJGlidG5DbG9zZVdpbmRvd3MFJGN0bDAwJENvbnRlbnRQbGFjZUhvbGRlcjEkZ3ZPcmRlck9sZA9nZAUmY3RsMDAkQ29udGVudFBsYWNlSG9sZGVyMSRndlN0b3JlU3RvY2sPZ2QFMmN0bDAwJENvbnRlbnRQbGFjZUhvbGRlcjEkdWNEZWxpdmVyMSRndkRlbGl2ZXJBZGRyD2dkBS9jdGwwMCRDb250ZW50UGxhY2VIb2xkZXIxJHVjRGVsaXZlcjEkZ3ZPcmRlck9sZA9nZHcsdKBqOT8mf1HSHPWCrgOGs8z+OU3i0WnD0nJEJRBf" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="__VIEWSTATEGENERATOR" Value="{{$HIDDEN2.__VIEWSTATEGENERATOR}}" RecordedValue="BDBAA6D6" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="__EVENTVALIDATION" Value="{{$HIDDEN2.__EVENTVALIDATION}}" RecordedValue="/wEdADPfyey2bYzDQxTB0JyF+Q882CRcuvXovf6TDCejY+C7yx/NaIM2lKaMHjpXPK+2CkkQBKUNWdLahUIVJ0byzYpPZUOOcZlH7ug+sz07wjc2X+fstiU46eSonSPP+vWfHlgjW3NtOv4S5V9BEV6G6Bsi3qnSyVBIM+zugL9Saaq0Qe2QRll+JQiOPl3BXV08lcnQAvU5EU7pWYgLDRufEMs6Eivq7FBmaKHULZ4JK/BZn/FBUWhmMy2UUggWXvkAatSYR+Kjyw8gzk0MfQ/AJNewUZNjOq/W3h2JqEGWS5zVl1Z76h7YnqC1dvdJQYB7LtpoSRQ4Z3ZrS4EBWivVEKRLXBzBrHzkbnp6YZRxIvy9nmZYkBCqarTBXWKnCPB9ZMzY5/LST1h4Li4Y4J7xlqq1PQIS3+7Nk9DF91gzodMi1z8MDiDAwXZwG+25Imi8Eu0RbSoQoylAoIjnIpZm4q3oGgOkRs/x0nQgsaQ72sj7qg5BDG3s2Di/t1u4iwlUf7MimHxYIJ/B/JLZ8n1f1RG05rtEGpXzu5//GVfvCPhHYmWgwwMvs/B/dSqzUl6hOiosDfMhQsINaHC1uiQNuKAQEooBcVdbl3uEQaTVzC/0eptHBelCd+gvDm/As3EuQ0Qx9vv/twcXcaUDLm1MAlnsdVLOhEXUuQNQ5JkjB/rUtWgcF0Ztr1aQLxxic7z/1ILyyAe/ayWPPg8RuKbvob/86TW4PilUFXi9u5SNBcOOQKeR+54J9F01OvMZztgsFk5apRfeA3cWeuR4NATSmUvjt+KH5vd+iCMPCuopAraYvephpiLZ6vZHQFIxrza54pOhlv6gKXxCNrMZXjNX6Kl7NLGGvWB/e2l08Gg9OkJrCa3KNlF2uXTowQpgwhnY6srC3bq4v+6tkqfdPsO63trQJbKpechYYDJiJue0ROFm40Akx3afT+E2+SCqdmKcaVcgRDMcdN0k7FHNnEUQoVIu6yMUEbmlPMeQWgX+X7mgfQ8QTcVhDhAxKfUaocHG0iNNlWD6s5Yz4mVsS+h8fFq4+54piTrshXlmVOmyTGO3Z+hQUSgWDCXcpPGp+aqjDCzo5f++oscNJgxIdDqW59ZSGtGiO+qzkJ2BHjlXPVtvfQ==" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="__ASYNCPOST" Value="true" RecordedValue="true" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="ctl00$ContentPlaceHolder1$btnNext" Value="下一步" RecordedValue="下一步" CorrelationBinding="{{FormPostParam14.ctl00$ContentPlaceHolder1$btnNext}}" UrlEncode="True" />
+      </FormPostHttpBody>
+    </Request>
+    <Request Method="GET" Guid="60d5f199-794e-4208-8256-82e81e184be9" Version="1.1" Url="http://13.94.24.201/CS/Order2.aspx" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Referer" Value="http://13.94.24.201/CS/Order1.aspx" />
+      </Headers>
+      <CorrelationExtractionRules>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="QueryStringParam1.OrderMasterID" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="StartsWith" Value="?OrderMasterID=" />
+            <RuleParameter Name="EndsWith" Value="&amp;" />
+            <RuleParameter Name="Index" Value="0" />
+            <RuleParameter Name="IgnoreCase" Value="False" />
+            <RuleParameter Name="UseRegularExpression" Value="False" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="QueryStringParam2.OrderStatus" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="StartsWith" Value="&amp;amp;OrderStatus=" />
+            <RuleParameter Name="EndsWith" Value="&quot;" />
+            <RuleParameter Name="Index" Value="0" />
+            <RuleParameter Name="IgnoreCase" Value="False" />
+            <RuleParameter Name="UseRegularExpression" Value="False" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractFormField, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="FormPostParam2.ctl00$ContentPlaceHolder1$btnNext" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="Name" Value="ctl00_ContentPlaceHolder1_btnNext" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+            <RuleParameter Name="Index" Value="0" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="QueryStringParam74.OrderMasterID" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="StartsWith" Value="?OrderMasterID=" />
+            <RuleParameter Name="EndsWith" Value="&amp;" />
+            <RuleParameter Name="Index" Value="0" />
+            <RuleParameter Name="IgnoreCase" Value="False" />
+            <RuleParameter Name="UseRegularExpression" Value="False" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="QueryStringParam75.OrderStatus" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="StartsWith" Value="&amp;amp;OrderStatus=" />
+            <RuleParameter Name="EndsWith" Value="&quot;" />
+            <RuleParameter Name="Index" Value="0" />
+            <RuleParameter Name="IgnoreCase" Value="False" />
+            <RuleParameter Name="UseRegularExpression" Value="False" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractFormField, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="FormPostParam15.ctl00$ContentPlaceHolder1$dlistProdClass$ctl01$btnProdClass" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="Name" Value="ctl00_ContentPlaceHolder1_dlistProdClass_ctl01_btnProdClass" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+            <RuleParameter Name="Index" Value="0" />
+          </RuleParameters>
+        </ExtractionRule>
+      </CorrelationExtractionRules>
+      <QueryStringParameters>
+        <QueryStringParameter Name="OrderMasterID" Value="B260170630004" RecordedValue="B260170630004" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="OrderStatus" Value="EditNewOrder" RecordedValue="EditNewOrder" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="POST" Guid="612b0ebb-c772-4457-9583-cd86b6bdaee8" Version="1.1" Url="http://13.94.24.201/CS/Order2.aspx" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="X-Requested-With" Value="XMLHttpRequest" />
+        <Header Name="X-MicrosoftAjax" Value="Delta=true" />
+        <Header Name="Referer" Value="http://13.94.24.201/CS/Order2.aspx?OrderMasterID=B260170630004&amp;OrderStatus=EditNewOrder" />
+      </Headers>
+      <CorrelationExtractionRules>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="QueryStringParam80.OrderMasterID" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="StartsWith" Value="?OrderMasterID=" />
+            <RuleParameter Name="EndsWith" Value="&amp;" />
+            <RuleParameter Name="Index" Value="0" />
+            <RuleParameter Name="IgnoreCase" Value="False" />
+            <RuleParameter Name="UseRegularExpression" Value="False" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="QueryStringParam81.OrderStatus" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="StartsWith" Value="&amp;OrderStatus=" />
+            <RuleParameter Name="EndsWith" Value="|" />
+            <RuleParameter Name="Index" Value="0" />
+            <RuleParameter Name="IgnoreCase" Value="False" />
+            <RuleParameter Name="UseRegularExpression" Value="False" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+          </RuleParameters>
+        </ExtractionRule>
+      </CorrelationExtractionRules>
+      <QueryStringParameters>
+        <QueryStringParameter Name="OrderMasterID" Value="B260170630004" RecordedValue="B260170630004" CorrelationBinding="{{QueryStringParam78.OrderMasterID}}" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="OrderStatus" Value="EditNewOrder" RecordedValue="EditNewOrder" CorrelationBinding="{{QueryStringParam79.OrderStatus}}" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+      <FormPostHttpBody>
+        <FormPostParameter Name="ctl00$ScriptManager1" Value="ctl00$ContentPlaceHolder1$UpdatePanel1|ctl00$ContentPlaceHolder1$dlistProdClass$ctl03$btnProdClass" RecordedValue="ctl00$ContentPlaceHolder1$UpdatePanel1|ctl00$ContentPlaceHolder1$dlistProdClass$ctl03$btnProdClass" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="ctl00$ContentPlaceHolder1$rptOrderSingle$ctl00$txtQty_S" Value="1" RecordedValue="1" CorrelationBinding="{{FormPostParam16.ctl00$ContentPlaceHolder1$rptOrderSingle$ctl00$txtQty_S}}" UrlEncode="True" />
+        <FormPostParameter Name="ctl00$ContentPlaceHolder1$txtMemo" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="__ASYNCPOST" Value="true" RecordedValue="true" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="ctl00$ContentPlaceHolder1$dlistProdClass$ctl03$btnProdClass" Value="組合餐" RecordedValue="組合餐" CorrelationBinding="{{FormPostParam17.ctl00$ContentPlaceHolder1$dlistProdClass$ctl03$btnProdClass}}" UrlEncode="True" />
+      </FormPostHttpBody>
+    </Request>
+    <Request Method="POST" Guid="49ac31cd-4e29-4054-8d6d-7ee16eeaf52b" Version="1.1" Url="http://13.94.24.201/CS/Order2.aspx" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="X-Requested-With" Value="XMLHttpRequest" />
+        <Header Name="X-MicrosoftAjax" Value="Delta=true" />
+        <Header Name="Referer" Value="http://13.94.24.201/CS/Order2.aspx?OrderMasterID=B260170630004&amp;OrderStatus=EditNewOrder" />
+      </Headers>
+      <CorrelationExtractionRules>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="QueryStringParam82.OrderMasterID" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="StartsWith" Value="?OrderMasterID=" />
+            <RuleParameter Name="EndsWith" Value="&amp;" />
+            <RuleParameter Name="Index" Value="0" />
+            <RuleParameter Name="IgnoreCase" Value="False" />
+            <RuleParameter Name="UseRegularExpression" Value="False" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="QueryStringParam83.OrderStatus" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="StartsWith" Value="&amp;OrderStatus=" />
+            <RuleParameter Name="EndsWith" Value="|" />
+            <RuleParameter Name="Index" Value="0" />
+            <RuleParameter Name="IgnoreCase" Value="False" />
+            <RuleParameter Name="UseRegularExpression" Value="False" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractFormField, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="FormPostParam19.ctl00$ContentPlaceHolder1$rptOrderSingle$ctl00$txtQty_S" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="Name" Value="ctl00_ContentPlaceHolder1_rptOrderSingle_ctl00_txtQty_S" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+            <RuleParameter Name="Index" Value="0" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractFormField, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="FormPostParam20.ctl00$ContentPlaceHolder1$rptOrderSingle$ctl01$txtQty_S" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="Name" Value="ctl00_ContentPlaceHolder1_rptOrderSingle_ctl01_txtQty_S" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+            <RuleParameter Name="Index" Value="0" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractFormField, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="FormPostParam21.ctl00$ContentPlaceHolder1$dlistProdClass$ctl05$btnProdClass" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="Name" Value="ctl00_ContentPlaceHolder1_dlistProdClass_ctl05_btnProdClass" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+            <RuleParameter Name="Index" Value="0" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractFormField, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="FormPostParam22.ctl00$ContentPlaceHolder1$rptOrderSingle$ctl00$txtQty_S" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="Name" Value="ctl00_ContentPlaceHolder1_rptOrderSingle_ctl00_txtQty_S" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+            <RuleParameter Name="Index" Value="0" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractFormField, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="FormPostParam23.ctl00$ContentPlaceHolder1$rptOrderSingle$ctl01$txtQty_S" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="Name" Value="ctl00_ContentPlaceHolder1_rptOrderSingle_ctl01_txtQty_S" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+            <RuleParameter Name="Index" Value="0" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="FormPostParam24.ctl00$ContentPlaceHolder1$rptOrderSingle$ctl02$txtQty_S" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="StartsWith" Value="lue=&quot;" />
+            <RuleParameter Name="EndsWith" Value="&quot; onc" />
+            <RuleParameter Name="Index" Value="41" />
+            <RuleParameter Name="IgnoreCase" Value="False" />
+            <RuleParameter Name="UseRegularExpression" Value="False" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractFormField, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="FormPostParam25.ctl00$ContentPlaceHolder1$rptOrderSingle$ctl00$txtQty_S" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="Name" Value="ctl00_ContentPlaceHolder1_rptOrderSingle_ctl00_txtQty_S" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+            <RuleParameter Name="Index" Value="0" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractFormField, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="FormPostParam26.ctl00$ContentPlaceHolder1$rptOrderSingle$ctl01$txtQty_S" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="Name" Value="ctl00_ContentPlaceHolder1_rptOrderSingle_ctl01_txtQty_S" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+            <RuleParameter Name="Index" Value="0" />
+          </RuleParameters>
+        </ExtractionRule>
+      </CorrelationExtractionRules>
+      <QueryStringParameters>
+        <QueryStringParameter Name="OrderMasterID" Value="B260170630004" RecordedValue="B260170630004" CorrelationBinding="{{QueryStringParam80.OrderMasterID}}" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="OrderStatus" Value="EditNewOrder" RecordedValue="EditNewOrder" CorrelationBinding="{{QueryStringParam81.OrderStatus}}" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+      <FormPostHttpBody>
+        <FormPostParameter Name="ctl00$ScriptManager1" Value="ctl00$ContentPlaceHolder1$UpdatePanel1|ctl00$ContentPlaceHolder1$dlistProduct$ctl01$lbtnCSRItemName" RecordedValue="ctl00$ContentPlaceHolder1$UpdatePanel1|ctl00$ContentPlaceHolder1$dlistProduct$ctl01$lbtnCSRItemName" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="ctl00$ContentPlaceHolder1$rptOrderSingle$ctl00$txtQty_S" Value="1" RecordedValue="1" CorrelationBinding="{{FormPostParam18.ctl00$ContentPlaceHolder1$rptOrderSingle$ctl00$txtQty_S}}" UrlEncode="True" />
+        <FormPostParameter Name="ctl00$ContentPlaceHolder1$txtMemo" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="__EVENTTARGET" Value="ctl00$ContentPlaceHolder1$dlistProduct$ctl01$lbtnCSRItemName" RecordedValue="ctl00$ContentPlaceHolder1$dlistProduct$ctl01$lbtnCSRItemName" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="__ASYNCPOST" Value="true" RecordedValue="true" CorrelationBinding="" UrlEncode="True" />
+      </FormPostHttpBody>
+    </Request>
+    <Request Method="POST" Guid="eaa3df12-92b3-4134-a059-f7c4e283c007" Version="1.1" Url="http://13.94.24.201/CS/Order2.aspx" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="X-Requested-With" Value="XMLHttpRequest" />
+        <Header Name="X-MicrosoftAjax" Value="Delta=true" />
+        <Header Name="Referer" Value="http://13.94.24.201/CS/Order2.aspx?OrderMasterID=B260170630004&amp;OrderStatus=EditNewOrder" />
+      </Headers>
+      <CorrelationExtractionRules>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="QueryStringParam84.OrderMasterID" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="StartsWith" Value="?OrderMasterID=" />
+            <RuleParameter Name="EndsWith" Value="&amp;" />
+            <RuleParameter Name="Index" Value="0" />
+            <RuleParameter Name="IgnoreCase" Value="False" />
+            <RuleParameter Name="UseRegularExpression" Value="False" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="QueryStringParam85.OrderStatus" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="StartsWith" Value="&amp;OrderStatus=" />
+            <RuleParameter Name="EndsWith" Value="|" />
+            <RuleParameter Name="Index" Value="0" />
+            <RuleParameter Name="IgnoreCase" Value="False" />
+            <RuleParameter Name="UseRegularExpression" Value="False" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+          </RuleParameters>
+        </ExtractionRule>
+      </CorrelationExtractionRules>
+      <QueryStringParameters>
+        <QueryStringParameter Name="OrderMasterID" Value="B260170630004" RecordedValue="B260170630004" CorrelationBinding="{{QueryStringParam82.OrderMasterID}}" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="OrderStatus" Value="EditNewOrder" RecordedValue="EditNewOrder" CorrelationBinding="{{QueryStringParam83.OrderStatus}}" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+      <FormPostHttpBody>
+        <FormPostParameter Name="ctl00$ScriptManager1" Value="ctl00$ContentPlaceHolder1$UpdatePanel1|ctl00$ContentPlaceHolder1$dlistProdClass$ctl05$btnProdClass" RecordedValue="ctl00$ContentPlaceHolder1$UpdatePanel1|ctl00$ContentPlaceHolder1$dlistProdClass$ctl05$btnProdClass" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="ctl00$ContentPlaceHolder1$rptOrderSingle$ctl00$txtQty_S" Value="1" RecordedValue="1" CorrelationBinding="{{FormPostParam19.ctl00$ContentPlaceHolder1$rptOrderSingle$ctl00$txtQty_S}}" UrlEncode="True" />
+        <FormPostParameter Name="ctl00$ContentPlaceHolder1$rptOrderSingle$ctl01$txtQty_S" Value="1" RecordedValue="1" CorrelationBinding="{{FormPostParam20.ctl00$ContentPlaceHolder1$rptOrderSingle$ctl01$txtQty_S}}" UrlEncode="True" />
+        <FormPostParameter Name="ctl00$ContentPlaceHolder1$txtMemo" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="__ASYNCPOST" Value="true" RecordedValue="true" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="ctl00$ContentPlaceHolder1$dlistProdClass$ctl05$btnProdClass" Value="冷飲" RecordedValue="冷飲" CorrelationBinding="{{FormPostParam21.ctl00$ContentPlaceHolder1$dlistProdClass$ctl05$btnProdClass}}" UrlEncode="True" />
+      </FormPostHttpBody>
+    </Request>
+    <Request Method="POST" Guid="b08ca496-4795-47e7-ab97-ec33a2beec64" Version="1.1" Url="http://13.94.24.201/CS/Order2.aspx" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="False" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Referer" Value="http://13.94.24.201/CS/Order2.aspx?OrderMasterID=B260170630004&amp;OrderStatus=EditNewOrder" />
+      </Headers>
+      <CorrelationExtractionRules>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="QueryStringParam86.OrderMasterID" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="StartsWith" Value="?OrderMasterID=" />
+            <RuleParameter Name="EndsWith" Value="&amp;" />
+            <RuleParameter Name="Index" Value="0" />
+            <RuleParameter Name="IgnoreCase" Value="False" />
+            <RuleParameter Name="UseRegularExpression" Value="False" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="QueryStringParam87.OrderStatus" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="StartsWith" Value="&amp;amp;OrderStatus=" />
+            <RuleParameter Name="EndsWith" Value="&quot;" />
+            <RuleParameter Name="Index" Value="0" />
+            <RuleParameter Name="IgnoreCase" Value="False" />
+            <RuleParameter Name="UseRegularExpression" Value="False" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractFormField, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="FormPostParam27.ctl00$ContentPlaceHolder1$radlPayment" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="Name" Value="ctl00_ContentPlaceHolder1_radlPayment_0" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+            <RuleParameter Name="Index" Value="0" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractFormField, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="FormPostParam28.ctl00$ContentPlaceHolder1$radlDeliverTimeSelect" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="Name" Value="ctl00_ContentPlaceHolder1_radlDeliverTimeSelect_0" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+            <RuleParameter Name="Index" Value="0" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractFormField, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="FormPostParam29.ctl00$ContentPlaceHolder1$btnSendOrder" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="Name" Value="ctl00_ContentPlaceHolder1_btnSendOrder" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+            <RuleParameter Name="Index" Value="0" />
+          </RuleParameters>
+        </ExtractionRule>
+      </CorrelationExtractionRules>
+      <QueryStringParameters>
+        <QueryStringParameter Name="OrderMasterID" Value="B260170630004" RecordedValue="B260170630004" CorrelationBinding="{{QueryStringParam1.OrderMasterID}}" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="OrderStatus" Value="EditNewOrder" RecordedValue="EditNewOrder" CorrelationBinding="{{QueryStringParam2.OrderStatus}}" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+      <FormPostHttpBody>
+        <FormPostParameter Name="ctl00$ContentPlaceHolder1$rptOrderSingle$ctl00$txtQty_S" Value="1" RecordedValue="1" CorrelationBinding="{{FormPostParam22.ctl00$ContentPlaceHolder1$rptOrderSingle$ctl00$txtQty_S}}" UrlEncode="True" />
+        <FormPostParameter Name="ctl00$ContentPlaceHolder1$rptOrderSingle$ctl01$txtQty_S" Value="1" RecordedValue="1" CorrelationBinding="{{FormPostParam23.ctl00$ContentPlaceHolder1$rptOrderSingle$ctl01$txtQty_S}}" UrlEncode="True" />
+        <FormPostParameter Name="ctl00$ContentPlaceHolder1$rptOrderSingle$ctl02$txtQty_S" Value="1" RecordedValue="1" CorrelationBinding="{{FormPostParam24.ctl00$ContentPlaceHolder1$rptOrderSingle$ctl02$txtQty_S}}" UrlEncode="True" />
+        <FormPostParameter Name="ctl00$ContentPlaceHolder1$txtMemo" Value="資訊測試，請勿製餐，謝謝。&#xD;&#xA;" RecordedValue="資訊測試，請勿製餐，謝謝。&#xD;&#xA;" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="ctl00$ContentPlaceHolder1$btnNext" Value="下一步" RecordedValue="下一步" CorrelationBinding="{{FormPostParam2.ctl00$ContentPlaceHolder1$btnNext}}" UrlEncode="True" />
+        <FormPostParameter Name="__VIEWSTATE" Value="/wEPDwUJMzc4NjcwMzAwDxYEHgVTZXFObwIDHgdHcm91cE5vZhYCZg9kFgICAw9kFgoCBQ8PFgIeBFRleHQFBGl0dHNkZAIJDw8WAh8CBQRpdHRzZGQCCw9kFgJmD2QWAgIBDw8WAh4HRW5hYmxlZGhkZAINDxYCHgdWaXNpYmxlZ2QCEw9kFiACAQ9kFgJmD2QWCgIBDzwrAAkBAA8WBB4IRGF0YUtleXMWAB4LXyFJdGVtQ291bnQCEWQWImYPZBYCAgEPDxYIHghDc3NDbGFzcwUMYnRuUHJvZENsYXNzHwIFBua8ouWgoR4PQ29tbWFuZEFyZ3VtZW50BSQ0NWFiYTU1NS0yMGRiLTQ4NDMtOTI4MC1lYWJjZDRhMjQ1NDceBF8hU0ICAmRkAgEPZBYCAgEPDxYIHwcFDGJ0blByb2RDbGFzcx8CBQnnsbPmvKLloKEfCAUkNTcwNTczYWMtNmYyYy00NDE3LWFmMzctYjI3NDZlMTlmMTliHwkCAmRkAgIPZBYCAgEPDxYIHwcFDGJ0blByb2RDbGFzcx8CBQnnhrHni5floKEfCAUkZjg4ZDJjYTEtNzIyZi00OGY2LWE5Y2EtZTVhMTc0OWJjZTIxHwkCAmRkAgMPZBYCAgEPDxYIHwcFDGJ0blByb2RDbGFzcx8CBQnntYTlkIjppJAfCAUkODQxODhiZDAtN2FiNy00NDViLTg1YTItNDFjNTVjNzgwY2FiHwkCAmRkAgQPZBYCAgEPDxYIHwcFDGJ0blByb2RDbGFzcx8CBQznpq7nm5Lnpq7lk4EfCAUkNWQ1MTk1NTMtNWFkZi00YzFjLWJiNWMtOWM2ZjVlYzUxYmUxHwkCAmRkAgUPZBYCAgEPDxYIHwcFEWJ0blByb2RDYWxzc19kb3duHwIFBuWGt+mjsh8IBSQ4MDUzYzYxYi1lYjc3LTQxYzAtYmFhNi04YTgxMDkxZDgyNDAfCQICZGQCBg9kFgICAQ8PFggfBwUMYnRuUHJvZENsYXNzHwIFBueGsemjsh8IBSQwNzk4M2Y2ZS01OWM2LTQyOGEtYjcxMy1iM2E4YjYzMDM0NzMfCQICZGQCBw9kFgICAQ8PFggfBwUMYnRuUHJvZENsYXNzHwIFBum7nuW/gx8IBSRiYmE3MjI0NS1jNDIxLTQzOTctYjc2Yy1lYTJkMjEzMTI2ODUfCQICZGQCCA9kFgICAQ8PFggfBwUMYnRuUHJvZENsYXNzHwIFBuaymeaLiR8IBSQ4NTEyZTQyNi1mMjYyLTQ4NTctOWRlYi0zYWJkZDllOWMyMmYfCQICZGQCCQ9kFgICAQ8PFggfBwUMYnRuUHJvZENsYXNzHwIFBueUnOm7nh8IBSRhYzI0ZjU5Yi0xZmRhLTRmZTctYTU5OS0xZTFhYTU4NjRkZWEfCQICZGQCCg9kFgICAQ8PFggfBwUMYnRuUHJvZENsYXNzHwIFCDk55aWX6aSQHwgFJDM3YzI0MzBhLTM3MTUtNGJiZS1hMTE0LWMxZmI5MjhmOGY2MB8JAgJkZAILD2QWAgIBDw8WCB8HBQxidG5Qcm9kQ2xhc3MfAgUJ54K46Zue6aSQHwgFJGM5NTI5NTM0LWQxMzYtNDdlNi04MGQ5LTQzY2I2N2M4MDc1NR8JAgJkZAIMD2QWAgIBDw8WCB8HBQxidG5Qcm9kQ2xhc3MfAgUG5aWX6aSQHwgFJDUzNzNjNjRhLWM0ZjgtNDQxNy05ZjA4LWRiMGZkOTFkMjZkNR8JAgJkZAIND2QWAgIBDw8WCB8HBQxidG5Qcm9kQ2xhc3MfAgUK5pepLea8ouWgoR8IBSQxOWJiOTBkMy0zMzk4LTQwMTAtOTkxYS04NGQwMDQ4MDAyYjkfCQICZGQCDg9kFgICAQ8PFggfBwUMYnRuUHJvZENsYXNzHwIFDOaXqeS4ieaYjuayux8IBSQyNGEzZmEwNC1lZDA4LTQ2ZWEtYTAxMy01OTMyODk5MjAzMWQfCQICZGQCDw9kFgICAQ8PFggfBwUMYnRuUHJvZENsYXNzHwIFCuaXqS3po7LmlpkfCAUkNmUxZGYwZDctYTFhYy00MTU1LTkwNTQtMGZmZTU4N2RhNTliHwkCAmRkAhAPZBYCAgEPDxYIHwcFDGJ0blByb2RDbGFzcx8CBQznlbDmpa3lkIjkvZwfCAUkYjdkZGQ0ZTUtMTY5Yy00YTdkLWE1MTctZmFhZDBjMGU5MGU5HwkCAmRkAgMPDxYEHwcFDGJ0blByb2RDbGFzcx8JAgJkZAIFDw8WBB8HBQxidG5Qcm9kQ2xhc3MfCQICZGQCBw8PFgQfBwUMYnRuUHJvZENsYXNzHwkCAmRkAgkPPCsACQEADxYEHwUWAB8GAhZkFixmD2QW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MDAkaWJ0blBpYwU0Y3RsMDAkQ29udGVudFBsYWNlSG9sZGVyMSRkbGlzdFByb2R1Y3QkY3RsMDEkaWJ0blBpYwU0Y3RsMDAkQ29udGVudFBsYWNlSG9sZGVyMSRkbGlzdFByb2R1Y3QkY3RsMDIkaWJ0blBpYwU0Y3RsMDAkQ29udGVudFBsYWNlSG9sZGVyMSRkbGlzdFByb2R1Y3QkY3RsMDMkaWJ0blBpYwU0Y3RsMDAkQ29udGVudFBsYWNlSG9sZGVyMSRkbGlzdFByb2R1Y3QkY3RsMDQkaWJ0blBpYwU0Y3RsMDAkQ29udGVudFBsYWNlSG9sZGVyMSRkbGlzdFByb2R1Y3QkY3RsMDUkaWJ0blBpYwU0Y3RsMDAkQ29udGVudFBsYWNlSG9sZGVyMSRkbGlzdFByb2R1Y3QkY3RsMDYkaWJ0blBpYwU0Y3RsMDAkQ29udGVudFBsYWNlSG9sZGVyMSRkbGlzdFByb2R1Y3QkY3RsMDckaWJ0blBpYwU0Y3RsMDAkQ29udGVudFBsYWNlSG9sZGVyMSRkbGlzdFByb2R1Y3QkY3RsMDgkaWJ0blBpYwU0Y3RsMDAkQ29udGVudFBsYWNlSG9sZGVyMSRkbGlzdFByb2R1Y3QkY3RsMDkkaWJ0blBpYwU0Y3RsMDAkQ29udGVudFBsYWNlSG9sZGVyMSRkbGlzdFByb2R1Y3QkY3RsMTAkaWJ0blBpYwU0Y3RsMDAkQ29udGVudFBsYWNlSG9sZGVyMSRkbGlzdFByb2R1Y3QkY3RsMTEkaWJ0blBpYwU0Y3RsMDAkQ29udGVudFBsYWNlSG9sZGVyMSRkbGlzdFByb2R1Y3QkY3RsMTIkaWJ0blBpYwU0Y3RsMDAkQ29udGVudFBsYWNlSG9sZGVyMSRkbGlzdFByb2R1Y3QkY3RsMTMkaWJ0blBpYwU0Y3RsMDAkQ29udGVudFBsYWNlSG9sZGVyMSRkbGlzdFByb2R1Y3QkY3RsMTQkaWJ0blBpYwU0Y3RsMDAkQ29udGVudFBsYWNlSG9sZGVyMSRkbGlzdFByb2R1Y3QkY3RsMTUkaWJ0blBpYwU0Y3RsMDAkQ29udGVudFBsYWNlSG9sZGVyMSRkbGlzdFByb2R1Y3QkY3RsMTYkaWJ0blBpYwU0Y3RsMDAkQ29udGVudFBsYWNlSG9sZGVyMSRkbGlzdFByb2R1Y3QkY3RsMTckaWJ0blBpYwU0Y3RsMDAkQ29udGVudFBsYWNlSG9sZGVyMSRkbGlzdFByb2R1Y3QkY3RsMTgkaWJ0blBpYwU0Y3RsMDAkQ29udGVudFBsYWNlSG9sZGVyMSRkbGlzdFByb2R1Y3QkY3RsMTkkaWJ0blBpYwU0Y3RsMDAkQ29udGVudFBsYWNlSG9sZGVyMSRkbGlzdFByb2R1Y3QkY3RsMjAkaWJ0blBpYwU0Y3RsMDAkQ29udGVudFBsYWNlSG9sZGVyMSRkbGlzdFByb2R1Y3QkY3RsMjEkaWJ0blBpYwUmY3RsMDAkQ29udGVudFBsYWNlSG9sZGVyMSRndlN0b3JlU3RvY2sPPCsADAEIZmRqmm+GLB/kYe4D421waMeDQgS6ns9RbiRWED/W8iBgXg==" RecordedValue="/wEPDwUJMzc4NjcwMzAwDxYEHgVTZXFObwIDHgdHcm91cE5vZhYCZg9kFgICAw9kFgoCBQ8PFgIeBFRleHQFBGl0dHNkZAIJDw8WAh8CBQRpdHRzZGQCCw9kFgJmD2QWAgIBDw8WAh4HRW5hYmxlZGhkZAINDxYCHgdWaXNpYmxlZ2QCEw9kFiACAQ9kFgJmD2QWCgIBDzwrAAkBAA8WBB4IRGF0YUtleXMWAB4LXyFJdGVtQ291bnQCEWQWImYPZBYCAgEPDxYIHghDc3NDbGFzcwUMYnRuUHJvZENsYXNzHwIFBua8ouWgoR4PQ29tbWFuZEFyZ3VtZW50BSQ0NWFiYTU1NS0yMGRiLTQ4NDMtOTI4MC1lYWJjZDRhMjQ1NDceBF8hU0ICAmRkAgEPZBYCAgEPDxYIHwcFDGJ0blByb2RDbGFzcx8CBQnnsbPmvKLloKEfCAUkNTcwNTczYWMtNmYyYy00NDE3LWFmMzctYjI3NDZlMTlmMTliHwkCAmRkAgIPZBYCAgEPDxYIHwcFDGJ0blByb2RDbGFzcx8CBQnnhrHni5floKEfCAUkZjg4ZDJjYTEtNzIyZi00OGY2LWE5Y2EtZTVhMTc0OWJjZTIxHwkCAmRkAgMPZBYCAgEPDxYIHwcFDGJ0blByb2RDbGFzcx8CBQnntYTlkIjppJAfCAUkODQxODhiZDAtN2FiNy00NDViLTg1YTItNDFjNTVjNzgwY2FiHwkCAmRkAgQPZBYCAgEPDxYIHwcFDGJ0blByb2RDbGFzcx8CBQznpq7nm5Lnpq7lk4EfCAUkNWQ1MTk1NTMtNWFkZi00YzFjLWJiNWMtOWM2ZjVlYzUxYmUxHwkCAmRkAgUPZBYCAgEPDxYIHwcFEWJ0blByb2RDYWxzc19kb3duHwIFBuWGt+mjsh8IBSQ4MDUzYzYxYi1lYjc3LTQxYzAtYmFhNi04YTgxMDkxZDgyNDAfCQICZGQCBg9kFgICAQ8PFggfBwUMYnRuUHJvZENsYXNzHwIFBueGsemjsh8IBSQwNzk4M2Y2ZS01OWM2LTQyOGEtYjcxMy1iM2E4YjYzMDM0NzMfCQICZGQCBw9kFgICAQ8PFggfBwUMYnRuUHJvZENsYXNzHwIFBum7nuW/gx8IBSRiYmE3MjI0NS1jNDIxLTQzOTctYjc2Yy1lYTJkMjEzMTI2ODUfCQICZGQCCA9kFgICAQ8PFggfBwUMYnRuUHJvZENsYXNzHwIFBuaymeaLiR8IBSQ4NTEyZTQyNi1mMjYyLTQ4NTctOWRlYi0zYWJkZDllOWMyMmYfCQICZGQCCQ9kFgICAQ8PFggfBwUMYnRuUHJvZENsYXNzHwIFBueUnOm7nh8IBSRhYzI0ZjU5Yi0xZmRhLTRmZTctYTU5OS0xZTFhYTU4NjRkZWEfCQICZGQCCg9kFgICAQ8PFggfBwUMYnRuUHJvZENsYXNzHwIFCDk55aWX6aSQHwgFJDM3YzI0MzBhLTM3MTUtNGJiZS1hMTE0LWMxZmI5MjhmOGY2MB8JAgJkZAILD2QWAgIBDw8WCB8HBQxidG5Qcm9kQ2xhc3MfAgUJ54K46Zue6aSQHwgFJGM5NTI5NTM0LWQxMzYtNDdlNi04MGQ5LTQzY2I2N2M4MDc1NR8JAgJkZAIMD2QWAgIBDw8WCB8HBQxidG5Qcm9kQ2xhc3MfAgUG5aWX6aSQHwgFJDUzNzNjNjRhLWM0ZjgtNDQxNy05ZjA4LWRiMGZkOTFkMjZkNR8JAgJkZAIND2QWAgIBDw8WCB8HBQxidG5Qcm9kQ2xhc3MfAgUK5pepLea8ouWgoR8IBSQxOWJiOTBkMy0zMzk4LTQwMTAtOTkxYS04NGQwMDQ4MDAyYjkfCQICZGQCDg9kFgICAQ8PFggfBwUMYnRuUHJvZENsYXNzHwIFDOaXqeS4ieaYjuayux8IBSQyNGEzZmEwNC1lZDA4LTQ2ZWEtYTAxMy01OTMyODk5MjAzMWQfCQICZGQCDw9kFgICAQ8PFggfBwUMYnRuUHJvZENsYXNzHwIFCuaXqS3po7LmlpkfCAUkNmUxZGYwZDctYTFhYy00MTU1LTkwNTQtMGZmZTU4N2RhNTliHwkCAmRkAhAPZBYCAgEPDxYIHwcFDGJ0blByb2RDbGFzcx8CBQznlbDmpa3lkIjkvZwfCAUkYjdkZGQ0ZTUtMTY5Yy00YTdkLWE1MTctZmFhZDBjMGU5MGU5HwkCAmRkAgMPDxYEHwcFDGJ0blByb2RDbGFzcx8JAgJkZAIFDw8WBB8HBQxidG5Qcm9kQ2xhc3MfCQICZGQCBw8PFgQfBwUMYnRuUHJvZENsYXNzHwkCAmRkAgkPPCsACQEADxYEHwUWAB8GAhZkFixmD2QW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MDAkaWJ0blBpYwU0Y3RsMDAkQ29udGVudFBsYWNlSG9sZGVyMSRkbGlzdFByb2R1Y3QkY3RsMDEkaWJ0blBpYwU0Y3RsMDAkQ29udGVudFBsYWNlSG9sZGVyMSRkbGlzdFByb2R1Y3QkY3RsMDIkaWJ0blBpYwU0Y3RsMDAkQ29udGVudFBsYWNlSG9sZGVyMSRkbGlzdFByb2R1Y3QkY3RsMDMkaWJ0blBpYwU0Y3RsMDAkQ29udGVudFBsYWNlSG9sZGVyMSRkbGlzdFByb2R1Y3QkY3RsMDQkaWJ0blBpYwU0Y3RsMDAkQ29udGVudFBsYWNlSG9sZGVyMSRkbGlzdFByb2R1Y3QkY3RsMDUkaWJ0blBpYwU0Y3RsMDAkQ29udGVudFBsYWNlSG9sZGVyMSRkbGlzdFByb2R1Y3QkY3RsMDYkaWJ0blBpYwU0Y3RsMDAkQ29udGVudFBsYWNlSG9sZGVyMSRkbGlzdFByb2R1Y3QkY3RsMDckaWJ0blBpYwU0Y3RsMDAkQ29udGVudFBsYWNlSG9sZGVyMSRkbGlzdFByb2R1Y3QkY3RsMDgkaWJ0blBpYwU0Y3RsMDAkQ29udGVudFBsYWNlSG9sZGVyMSRkbGlzdFByb2R1Y3QkY3RsMDkkaWJ0blBpYwU0Y3RsMDAkQ29udGVudFBsYWNlSG9sZGVyMSRkbGlzdFByb2R1Y3QkY3RsMTAkaWJ0blBpYwU0Y3RsMDAkQ29udGVudFBsYWNlSG9sZGVyMSRkbGlzdFByb2R1Y3QkY3RsMTEkaWJ0blBpYwU0Y3RsMDAkQ29udGVudFBsYWNlSG9sZGVyMSRkbGlzdFByb2R1Y3QkY3RsMTIkaWJ0blBpYwU0Y3RsMDAkQ29udGVudFBsYWNlSG9sZGVyMSRkbGlzdFByb2R1Y3QkY3RsMTMkaWJ0blBpYwU0Y3RsMDAkQ29udGVudFBsYWNlSG9sZGVyMSRkbGlzdFByb2R1Y3QkY3RsMTQkaWJ0blBpYwU0Y3RsMDAkQ29udGVudFBsYWNlSG9sZGVyMSRkbGlzdFByb2R1Y3QkY3RsMTUkaWJ0blBpYwU0Y3RsMDAkQ29udGVudFBsYWNlSG9sZGVyMSRkbGlzdFByb2R1Y3QkY3RsMTYkaWJ0blBpYwU0Y3RsMDAkQ29udGVudFBsYWNlSG9sZGVyMSRkbGlzdFByb2R1Y3QkY3RsMTckaWJ0blBpYwU0Y3RsMDAkQ29udGVudFBsYWNlSG9sZGVyMSRkbGlzdFByb2R1Y3QkY3RsMTgkaWJ0blBpYwU0Y3RsMDAkQ29udGVudFBsYWNlSG9sZGVyMSRkbGlzdFByb2R1Y3QkY3RsMTkkaWJ0blBpYwU0Y3RsMDAkQ29udGVudFBsYWNlSG9sZGVyMSRkbGlzdFByb2R1Y3QkY3RsMjAkaWJ0blBpYwU0Y3RsMDAkQ29udGVudFBsYWNlSG9sZGVyMSRkbGlzdFByb2R1Y3QkY3RsMjEkaWJ0blBpYwUmY3RsMDAkQ29udGVudFBsYWNlSG9sZGVyMSRndlN0b3JlU3RvY2sPPCsADAEIZmRqmm+GLB/kYe4D421waMeDQgS6ns9RbiRWED/W8iBgXg==" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="__EVENTVALIDATION" Value="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" RecordedValue="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" CorrelationBinding="" UrlEncode="True" />
+      </FormPostHttpBody>
+    </Request>
+    <Request Method="POST" Guid="6677ea94-7ac2-412a-a9e0-61033a245ac1" Version="1.1" Url="http://13.94.24.201/CS/Order2.aspx" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="X-Requested-With" Value="XMLHttpRequest" />
+        <Header Name="X-MicrosoftAjax" Value="Delta=true" />
+        <Header Name="Referer" Value="http://13.94.24.201/CS/Order2.aspx?OrderMasterID=B260170630004&amp;OrderStatus=EditNewOrder" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="OrderMasterID" Value="B260170630004" RecordedValue="B260170630004" CorrelationBinding="{{QueryStringParam84.OrderMasterID}}" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="OrderStatus" Value="EditNewOrder" RecordedValue="EditNewOrder" CorrelationBinding="{{QueryStringParam85.OrderStatus}}" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+      <FormPostHttpBody>
+        <FormPostParameter Name="ctl00$ScriptManager1" Value="ctl00$ContentPlaceHolder1$UpdatePanel1|ctl00$ContentPlaceHolder1$dlistProduct$ctl14$lbtnCSRItemName" RecordedValue="ctl00$ContentPlaceHolder1$UpdatePanel1|ctl00$ContentPlaceHolder1$dlistProduct$ctl14$lbtnCSRItemName" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="ctl00$ContentPlaceHolder1$rptOrderSingle$ctl00$txtQty_S" Value="1" RecordedValue="1" CorrelationBinding="{{FormPostParam25.ctl00$ContentPlaceHolder1$rptOrderSingle$ctl00$txtQty_S}}" UrlEncode="True" />
+        <FormPostParameter Name="ctl00$ContentPlaceHolder1$rptOrderSingle$ctl01$txtQty_S" Value="1" RecordedValue="1" CorrelationBinding="{{FormPostParam26.ctl00$ContentPlaceHolder1$rptOrderSingle$ctl01$txtQty_S}}" UrlEncode="True" />
+        <FormPostParameter Name="ctl00$ContentPlaceHolder1$txtMemo" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="__EVENTTARGET" Value="ctl00$ContentPlaceHolder1$dlistProduct$ctl14$lbtnCSRItemName" RecordedValue="ctl00$ContentPlaceHolder1$dlistProduct$ctl14$lbtnCSRItemName" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="__ASYNCPOST" Value="true" RecordedValue="true" CorrelationBinding="" UrlEncode="True" />
+      </FormPostHttpBody>
+    </Request>
+    <Request Method="POST" Guid="fd061ab8-2373-4b78-b76f-63e8bce3d6bd" Version="1.1" Url="http://13.94.24.201/CS/Order3.aspx" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="X-Requested-With" Value="XMLHttpRequest" />
+        <Header Name="X-MicrosoftAjax" Value="Delta=true" />
+        <Header Name="Referer" Value="http://13.94.24.201/CS/Order3.aspx?OrderMasterID=B260170630004&amp;OrderStatus=EditNewOrder" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="OrderMasterID" Value="B260170630004" RecordedValue="B260170630004" CorrelationBinding="{{QueryStringParam86.OrderMasterID}}" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="OrderStatus" Value="EditNewOrder" RecordedValue="EditNewOrder" CorrelationBinding="{{QueryStringParam87.OrderStatus}}" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+      <FormPostHttpBody>
+        <FormPostParameter Name="ctl00$ScriptManager1" Value="ctl00$ContentPlaceHolder1$upd_btnSendOrder|ctl00$ContentPlaceHolder1$btnSendOrder" RecordedValue="ctl00$ContentPlaceHolder1$upd_btnSendOrder|ctl00$ContentPlaceHolder1$btnSendOrder" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="ctl00$ContentPlaceHolder1$radlPayment" Value="1" RecordedValue="1" CorrelationBinding="{{FormPostParam27.ctl00$ContentPlaceHolder1$radlPayment}}" UrlEncode="True" />
+        <FormPostParameter Name="ctl00$ContentPlaceHolder1$radlDeliverTimeSelect" Value="0" RecordedValue="0" CorrelationBinding="{{FormPostParam28.ctl00$ContentPlaceHolder1$radlDeliverTimeSelect}}" UrlEncode="True" />
+        <FormPostParameter Name="ctl00$ContentPlaceHolder1$txtVAT" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="ctl00$ContentPlaceHolder1$txtMemo" Value="資訊測試，請勿製餐，謝謝。&#xA;" RecordedValue="資訊測試，請勿製餐，謝謝。&#xA;" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="__ASYNCPOST" Value="true" RecordedValue="true" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="ctl00$ContentPlaceHolder1$btnSendOrder" Value="訂單送出" RecordedValue="訂單送出" CorrelationBinding="{{FormPostParam29.ctl00$ContentPlaceHolder1$btnSendOrder}}" UrlEncode="True" />
+      </FormPostHttpBody>
+    </Request>
+  </Items>
+  <ValidationRules>
+    <ValidationRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ValidateResponseUrl, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" DisplayName="回應 URL" Description="驗證回應 URL 在套用重新導向之後是否和記錄的回應 URL 相同。已忽略 QueryString 參數。" Level="Low" ExectuionOrder="BeforeDependents" />
+    <ValidationRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ValidationRuleResponseTimeGoal, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" DisplayName="回應時間目標" Description="驗證此要求的回應時間是否小於或等於此要求所指定的回應時間目標。回應時間目標為零將被忽略。" Level="Low" ExectuionOrder="AfterDependents">
+      <RuleParameters>
+        <RuleParameter Name="Tolerance" Value="0" />
+      </RuleParameters>
+    </ValidationRule>
+  </ValidationRules>
+</WebTest>
