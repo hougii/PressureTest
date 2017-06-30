@@ -66,9 +66,6 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="T03-01單品漢堡+單品飲料.webtest" />
-    <None Include="T03-02-精致套餐_bak.webtest">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
     <None Include="T03-02精致套餐.webtest">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
