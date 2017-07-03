@@ -1,0 +1,227 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WebTest Name="T01-05 訂單查詢" Id="d6cf840f-7fc7-4170-a000-88ff31257fed" Owner="" Priority="2147483647" Enabled="True" CssProjectStructure="" CssIteration="" Timeout="0" WorkItemIds="" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010" Description="" CredentialUserName="" CredentialPassword="" PreAuthenticate="True" Proxy="default" StopOnError="False" RecordedResultFile="T01-05 訂單查詢.93d1a37f-63cb-4e9d-9644-9c8a2a518e19.rec.webtestresult" ResultsLocale="">
+  <Items>
+    <Request Method="GET" Guid="3af999bd-4231-4a63-960f-34dc00e11ccc" Version="1.1" Url="http://api.bing.com/qsml.aspx" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <QueryStringParameters>
+        <QueryStringParameter Name="query" Value="http%3A%2F%2F13.75.111.18%3A80" RecordedValue="http%3A%2F%2F13.75.111.18%3A80" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="src" Value="IE-Address" RecordedValue="IE-Address" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="maxwidth" Value="32765" RecordedValue="32765" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="rowheight" Value="20" RecordedValue="20" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="sectionHeight" Value="160" RecordedValue="160" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="FORM" Value="IE8SSC" RecordedValue="IE8SSC" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="market" Value="zh-TW" RecordedValue="zh-TW" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="01e1cde4-286a-4046-8cbc-95a9fed1684e" Version="1.1" Url="http://api.bing.com/qsml.aspx" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <QueryStringParameters>
+        <QueryStringParameter Name="query" Value="http%3A%2F%2F13.75.111.18%3A80" RecordedValue="http%3A%2F%2F13.75.111.18%3A80" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="src" Value="IE-Address" RecordedValue="IE-Address" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="maxwidth" Value="32765" RecordedValue="32765" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="rowheight" Value="20" RecordedValue="20" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="sectionHeight" Value="160" RecordedValue="160" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="FORM" Value="IE8SSC" RecordedValue="IE8SSC" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="market" Value="zh-TW" RecordedValue="zh-TW" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="f62d2973-fce2-427d-8a1a-ecefc32f0bff" Version="1.1" Url="http://13.75.111.18/" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False" />
+    <Request Method="GET" Guid="4bb5acb5-111d-41b3-ae8f-15a209e2afcf" Version="1.1" Url="http://13.75.111.18/fonts/glyphicons-halflings-regular.eot" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Referer" Value="http://13.75.111.18/" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="e9d155fb-ad52-422a-9ea9-6842974c278e" Version="1.1" Url="http://13.75.111.18/Web/Member/Login.aspx" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <DependentRequests>
+        <Request Method="GET" Guid="57e48ee1-789a-453a-99c5-1431b8a75478" Version="1.1" Url="http://13.75.111.18/fonts/glyphicons-halflings-regular.eot" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Referer" Value="http://13.75.111.18/Web/Member/Login.aspx" />
+          </Headers>
+          <QueryStringParameters>
+            <QueryStringParameter Name="" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+          </QueryStringParameters>
+        </Request>
+      </DependentRequests>
+      <Headers>
+        <Header Name="Referer" Value="http://13.75.111.18/" />
+      </Headers>
+    </Request>
+    <Request Method="GET" Guid="b544995b-8597-4d46-b6a4-028c19cdacb0" Version="1.1" Url="http://13.75.111.18/Web/Member/Login.aspx" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <DependentRequests>
+        <Request Method="GET" Guid="35be30d3-17cb-4ea6-b26f-b54116a02a0d" Version="1.1" Url="http://13.75.111.18/fonts/glyphicons-halflings-regular.eot" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Referer" Value="http://13.75.111.18/Web/Member/Login.aspx" />
+          </Headers>
+          <QueryStringParameters>
+            <QueryStringParameter Name="" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+          </QueryStringParameters>
+        </Request>
+      </DependentRequests>
+      <Headers>
+        <Header Name="Referer" Value="http://13.75.111.18/Web/Member/Login.aspx" />
+      </Headers>
+      <ExtractionRules>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractHiddenFields, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="1" DisplayName="擷取隱藏欄位" Description="擷取回應中的所有隱藏欄位，並將它們放在測試內容中。">
+          <RuleParameters>
+            <RuleParameter Name="Required" Value="True" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+          </RuleParameters>
+        </ExtractionRule>
+      </ExtractionRules>
+      <CorrelationExtractionRules>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractFormField, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="FormPostParam1.ctl00$ContentPlaceHolder1$btnLogin" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="Name" Value="ctl00_ContentPlaceHolder1_btnLogin" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+            <RuleParameter Name="Index" Value="0" />
+          </RuleParameters>
+        </ExtractionRule>
+      </CorrelationExtractionRules>
+    </Request>
+    <Request Method="POST" Guid="7f305d6b-7626-4810-bb2a-beec9d1786f6" Version="1.1" Url="http://13.75.111.18/Web/Member/Login.aspx" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="X-Requested-With" Value="XMLHttpRequest" />
+        <Header Name="X-MicrosoftAjax" Value="Delta=true" />
+        <Header Name="Referer" Value="http://13.75.111.18/Web/Member/Login.aspx" />
+      </Headers>
+      <FormPostHttpBody>
+        <FormPostParameter Name="ctl00$ScriptManager1" Value="ctl00$ContentPlaceHolder1$updLogin|ctl00$ContentPlaceHolder1$btnLogin" RecordedValue="ctl00$ContentPlaceHolder1$updLogin|ctl00$ContentPlaceHolder1$btnLogin" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="__EVENTTARGET" Value="{{$HIDDEN1.__EVENTTARGET}}" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="__EVENTARGUMENT" Value="{{$HIDDEN1.__EVENTARGUMENT}}" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="__VIEWSTATE" Value="{{$HIDDEN1.__VIEWSTATE}}" RecordedValue="/wEPDwUJMzAwNDk1MTc3D2QWAmYPZBYCAgMPZBYEAgcPZBYCZg9kFgQCAQ8WAh4HVmlzaWJsZWhkAgMPFgIfAGhkAgkPZBYEAgEPD2QWAh4Jb25rZXlkb3duBV1pZihldmVudC5rZXlDb2RlID09IDEzKSBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnY3RsMDBfQ29udGVudFBsYWNlSG9sZGVyMV9idG5Mb2dpbicpLmZvY3VzKClkAgMPD2QWAh8BBV1pZihldmVudC5rZXlDb2RlID09IDEzKSBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnY3RsMDBfQ29udGVudFBsYWNlSG9sZGVyMV9idG5Mb2dpbicpLmZvY3VzKClkGAEFHl9fQ29udHJvbHNSZXF1aXJlUG9zdEJhY2tLZXlfXxYCBSJjdGwwMCRDb250ZW50UGxhY2VIb2xkZXIxJGNoa0NhY2hlBSdjdGwwMCRDb250ZW50UGxhY2VIb2xkZXIxJGlidG5DbG9zZU1lYWygNgE5IPKPpTyfPHvSZgGUSvB6w6JQSfD9haZcIyRIbA==" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="__VIEWSTATEGENERATOR" Value="{{$HIDDEN1.__VIEWSTATEGENERATOR}}" RecordedValue="89A0794D" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="__EVENTVALIDATION" Value="{{$HIDDEN1.__EVENTVALIDATION}}" RecordedValue="/wEdAApKtyLn6Wqt+btwTMzgpfHlqgK8wDsPN3pLzB+wROa+JfhHWR8IFh9KsIir8ip6DVDJ0VcYqqWd961hxEgq5mRYAJiUX+cOgLoF3NUISCK2Z7BLjGdbxkhUHTpfuimwcOSfkFT/0CcFho0UDBtM1XtuaMBY0KnIXb1cTbCnO5pCliue9FirewXyNqoSxKJnezjxQBWPrjvEzov7+OGnLVVpJvvvwXYzk/U1bJGwlSMWGgL1UYYg+KkOGFxB0chabZE=" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="ctl00$ContentPlaceHolder1$txtID" Value="jgod5@yahoo.com.tw" RecordedValue="jgod5@yahoo.com.tw" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="ctl00$ContentPlaceHolder1$txtPswd" Value="wwww0000" RecordedValue="wwww0000" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="ctl00$ContentPlaceHolder1$hiddSMS" Value="{{$HIDDEN1.ctl00$ContentPlaceHolder1$hiddSMS}}" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="ctl00$ContentPlaceHolder1$txtSMS" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="__ASYNCPOST" Value="true" RecordedValue="true" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="ctl00$ContentPlaceHolder1$btnLogin" Value="登入" RecordedValue="登入" CorrelationBinding="{{FormPostParam1.ctl00$ContentPlaceHolder1$btnLogin}}" UrlEncode="True" />
+      </FormPostHttpBody>
+    </Request>
+    <Request Method="GET" Guid="c1fe27c6-0302-4ce9-9ead-f368a190ac79" Version="1.1" Url="http://13.75.111.18/Web/Member/Default.aspx" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <DependentRequests>
+        <Request Method="GET" Guid="1e52e6cb-0dc5-4bc6-a0e1-f864aa38a81b" Version="1.1" Url="http://13.75.111.18/fonts/glyphicons-halflings-regular.eot" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Referer" Value="http://13.75.111.18/Web/Member/Default.aspx" />
+          </Headers>
+          <QueryStringParameters>
+            <QueryStringParameter Name="" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+          </QueryStringParameters>
+        </Request>
+      </DependentRequests>
+      <Headers>
+        <Header Name="Referer" Value="http://13.75.111.18/Web/Member/Login.aspx" />
+      </Headers>
+      <ExtractionRules>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractHiddenFields, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="1" DisplayName="擷取隱藏欄位" Description="擷取回應中的所有隱藏欄位，並將它們放在測試內容中。">
+          <RuleParameters>
+            <RuleParameter Name="Required" Value="True" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+          </RuleParameters>
+        </ExtractionRule>
+      </ExtractionRules>
+    </Request>
+    <Request Method="GET" Guid="7b5a5ca4-b7f6-41eb-9538-c557a626fa13" Version="1.1" Url="http://13.75.111.18/fonts/fontawesome-webfont.eot" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Referer" Value="http://13.75.111.18/Web/Member/Default.aspx" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="POST" Guid="c7873533-06c6-4b96-af48-7010b1721f81" Version="1.1" Url="http://13.75.111.18/Web/Member/Default.aspx" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="http://13.75.111.18/Web/Member/HistoryOrder.aspx" ReportingName="" IgnoreHttpStatusCode="False">
+      <DependentRequests>
+        <Request Method="GET" Guid="38e69f31-80b7-41b9-b736-90e3c343a467" Version="1.1" Url="http://13.75.111.18/fonts/glyphicons-halflings-regular.eot" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Referer" Value="http://13.75.111.18/Web/Member/HistoryOrder.aspx" />
+          </Headers>
+          <QueryStringParameters>
+            <QueryStringParameter Name="" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+          </QueryStringParameters>
+        </Request>
+      </DependentRequests>
+      <Headers>
+        <Header Name="Referer" Value="http://13.75.111.18/Web/Member/Default.aspx" />
+      </Headers>
+      <ExtractionRules>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractHiddenFields, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="1" DisplayName="擷取隱藏欄位" Description="擷取回應中的所有隱藏欄位，並將它們放在測試內容中。">
+          <RuleParameters>
+            <RuleParameter Name="Required" Value="True" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+          </RuleParameters>
+        </ExtractionRule>
+      </ExtractionRules>
+      <CorrelationExtractionRules>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractFormField, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="FormPostParam2.ctl00$btnLogout" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="Name" Value="ctl00_btnLogout" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+            <RuleParameter Name="Index" Value="0" />
+          </RuleParameters>
+        </ExtractionRule>
+      </CorrelationExtractionRules>
+      <FormPostHttpBody>
+        <FormPostParameter Name="__EVENTTARGET" Value="ctl00$ContentPlaceHolder1$ucLoginMenu1$lbtnHistoryOrder" RecordedValue="ctl00$ContentPlaceHolder1$ucLoginMenu1$lbtnHistoryOrder" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="__EVENTARGUMENT" Value="{{$HIDDEN1.__EVENTARGUMENT}}" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="__VIEWSTATE" Value="{{$HIDDEN1.__VIEWSTATE}}" RecordedValue="/wEPDwUKMTk3MTM5MDUxNg9kFgJmD2QWAgIDD2QWAgIHD2QWAmYPZBYIAgEPFgIeB1Zpc2libGVnFgICAQ8PFgIeBFRleHQFCemZs+WFiOeUn2RkAgMPFgIfAGdkAgUPFgIfAGhkAgcPFgIfAGhkZG4ZC9QD89YnT+isFrYqgALBImf6ZAZG2vLAqfR5oyyt" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="__VIEWSTATEGENERATOR" Value="{{$HIDDEN1.__VIEWSTATEGENERATOR}}" RecordedValue="BEF08454" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="__EVENTVALIDATION" Value="{{$HIDDEN1.__EVENTVALIDATION}}" RecordedValue="/wEdAAqzU3EyUvwG+59p7RZgBR0LqgK8wDsPN3pLzB+wROa+JZtHBelCd+gvDm/As3EuQ0RzHX6vYdIaqm40XHAmTl0LoWuxxKxHMO4WOZfJb78jIlksB7xyJ+GdBDVpCN4NdIL4KdhWBslNpaVNbzQH84gfGd/6NG7cI6D1NGYfOTj00iY8Vv4+dpMOGdDd44OWrsjtIIYHccZZS/EfND2DPNHCDDVujwgh+RSguYn4aBYowUJmTm190Ov2LUjhahlv+tM=" CorrelationBinding="" UrlEncode="True" />
+      </FormPostHttpBody>
+    </Request>
+    <Request Method="POST" Guid="e5490637-31c5-4c2b-b492-aa630aec45e8" Version="1.1" Url="http://13.75.111.18/Web/Member/HistoryOrder.aspx" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="X-Requested-With" Value="XMLHttpRequest" />
+        <Header Name="X-MicrosoftAjax" Value="Delta=true" />
+        <Header Name="Referer" Value="http://13.75.111.18/Web/Member/HistoryOrder.aspx" />
+      </Headers>
+      <FormPostHttpBody>
+        <FormPostParameter Name="ctl00$ScriptManager1" Value="ctl00$updMasterMember|ctl00$btnLogout" RecordedValue="ctl00$updMasterMember|ctl00$btnLogout" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="__EVENTTARGET" Value="{{$HIDDEN1.__EVENTTARGET}}" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="__EVENTARGUMENT" Value="{{$HIDDEN1.__EVENTARGUMENT}}" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="__VIEWSTATE" Value="{{$HIDDEN1.__VIEWSTATE}}" RecordedValue="/wEPDwUKLTE4MjgwMjg3Mg9kFgJmD2QWAgIDD2QWBAIHD2QWAmYPZBYIAgEPFgIeB1Zpc2libGVnFgICAQ8PFgIeBFRleHQFCemZs+WFiOeUn2RkAgMPFgIfAGdkAgUPFgIfAGhkAgcPFgIfAGhkAgkPZBYCAgMPZBYCZg9kFgICAQ88KwARAwAPFgQeC18hRGF0YUJvdW5kZx4LXyFJdGVtQ291bnQCAmQBEBYAFgAWAAwUKwAAFgJmD2QWBgIBD2QWDmYPZBYCAgEPDxYCHwEFDUIyNjUxNzA2MjMwMDNkZAIBDw8WAh8BBRAyMDE3LzA2LzI0IDA4OjAwZGQCAg8PFgIfAQUG5YWn55SoZGQCAw8PFgIfAQUP5paw6I6K5YyW5oiQ5bqXZGQCBA8PFgIfAQUCODBkZAIFD2QWAgIBDw8WAh8BBQnmnKrlj5bppJBkZAIGD2QWCGYPFQINQjI2NTE3MDYyMzAwMw1CMjY1MTcwNjIzMDAzZAIBDxYCHwBoZAIDDw8WBB4PQ29tbWFuZEFyZ3VtZW50BQ1CMjY1MTcwNjIzMDAzHwBoZGQCBQ9kFgICAQ8PFgQfAQUJ5pyq5pSv5LuYHwBoZGQCAg9kFg5mD2QWAgIBDw8WAh8BBQ1CMDEwMTcwNjIzMDAyZGQCAQ8PFgIfAQUQMjAxNy8wNi8yNCAwODowMGRkAgIPDxYCHwEFDOWIsOW6l+WPluiyqGRkAgMPDxYCHwEFCeawkeeUn+W6l2RkAgQPDxYCHwEFAjY1ZGQCBQ9kFgICAQ8PFgIfAQUJ5bey5Y+W6aSQZGQCBg9kFghmDxUCDUIwMTAxNzA2MjMwMDINQjAxMDE3MDYyMzAwMmQCAQ8WAh8AaGQCAw8PFgQfBAUNQjAxMDE3MDYyMzAwMh8AaGRkAgUPZBYCAgEPDxYEHwEFCeacquaUr+S7mB8AaGRkAgMPDxYCHwBoZGQYAgUeX19Db250cm9sc1JlcXVpcmVQb3N0QmFja0tleV9fFgEFI2N0bDAwJENvbnRlbnRQbGFjZUhvbGRlcjEkaWJ0bkNsb3NlBSFjdGwwMCRDb250ZW50UGxhY2VIb2xkZXIxJGd2T3JkZXIPPCsADAEIAgFkMixG2EqU6AK9FBf7BecvsRL+pP/NlnC9C2ehHEBAIEY=" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="__VIEWSTATEGENERATOR" Value="{{$HIDDEN1.__VIEWSTATEGENERATOR}}" RecordedValue="9BBCA782" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="__EVENTVALIDATION" Value="{{$HIDDEN1.__EVENTVALIDATION}}" RecordedValue="/wEdABdZMunEP7RHZAVbb7vP07w4qgK8wDsPN3pLzB+wROa+JZtHBelCd+gvDm/As3EuQ0QyywlBEkqXwDRpvIPL0gbSeI6qJXgP36bo8j7KG5FOqCYeVRKbuFFclCD3QozjCqp2AZC1cLQnmyJShHCz++LDRCUa3zjljMwbx8x/fmklL7p0epKehHF4uGLYxQ+1nK/qgm2ZV4pF9fMyFKgwZ1W1uGBuauSkf6an53LxU7q3Csu+eGmAF+cMmmRQLGEn0H9WyKwAaQUuW4fLI3cF6Zj7cx1+r2HSGqpuNFxwJk5dC6FrscSsRzDuFjmXyW+/IyJZLAe8cifhnQQ1aQjeDXSC+CnYVgbJTaWlTW80B/OIHxnf+jRu3COg9TRmHzk49NImPFb+PnaTDhnQ3eODlq7I7SCGB3HGWUvxHzQ9gzzRws0fXhEHb9S0E+UvYMn77fdCsi3Ij6VodRCiRrnVox9SLgI9lQoQClmUMan9pSCCgkNLdaWM99qOU21ScWlwQWT+qewBieaQzwRBVMTsAM7N" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="ctl00$ContentPlaceHolder1$gvOrder$ctl02$hiddPay" Value="{{$HIDDEN1.ctl00$ContentPlaceHolder1$gvOrder$ctl02$hiddPay}}" RecordedValue="N" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="ctl00$ContentPlaceHolder1$gvOrder$ctl02$hiddTotalPrice" Value="{{$HIDDEN1.ctl00$ContentPlaceHolder1$gvOrder$ctl02$hiddTotalPrice}}" RecordedValue="80" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="ctl00$ContentPlaceHolder1$gvOrder$ctl02$hiddDeliverTime" Value="{{$HIDDEN1.ctl00$ContentPlaceHolder1$gvOrder$ctl02$hiddDeliverTime}}" RecordedValue="2017/06/24 08:00" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="ctl00$ContentPlaceHolder1$gvOrder$ctl02$hiddStatusCSR" Value="{{$HIDDEN1.ctl00$ContentPlaceHolder1$gvOrder$ctl02$hiddStatusCSR}}" RecordedValue="3" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="ctl00$ContentPlaceHolder1$gvOrder$ctl02$hiddStatusStore" Value="{{$HIDDEN1.ctl00$ContentPlaceHolder1$gvOrder$ctl02$hiddStatusStore}}" RecordedValue="N" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="ctl00$ContentPlaceHolder1$gvOrder$ctl03$hiddPay" Value="{{$HIDDEN1.ctl00$ContentPlaceHolder1$gvOrder$ctl03$hiddPay}}" RecordedValue="N" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="ctl00$ContentPlaceHolder1$gvOrder$ctl03$hiddTotalPrice" Value="{{$HIDDEN1.ctl00$ContentPlaceHolder1$gvOrder$ctl03$hiddTotalPrice}}" RecordedValue="65" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="ctl00$ContentPlaceHolder1$gvOrder$ctl03$hiddDeliverTime" Value="{{$HIDDEN1.ctl00$ContentPlaceHolder1$gvOrder$ctl03$hiddDeliverTime}}" RecordedValue="2017/06/24 08:00" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="ctl00$ContentPlaceHolder1$gvOrder$ctl03$hiddStatusCSR" Value="{{$HIDDEN1.ctl00$ContentPlaceHolder1$gvOrder$ctl03$hiddStatusCSR}}" RecordedValue="3" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="ctl00$ContentPlaceHolder1$gvOrder$ctl03$hiddStatusStore" Value="{{$HIDDEN1.ctl00$ContentPlaceHolder1$gvOrder$ctl03$hiddStatusStore}}" RecordedValue="N" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="ctl00$ContentPlaceHolder1$hiddCancel" Value="{{$HIDDEN1.ctl00$ContentPlaceHolder1$hiddCancel}}" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="__ASYNCPOST" Value="true" RecordedValue="true" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="ctl00$btnLogout" Value="登出" RecordedValue="登出" CorrelationBinding="{{FormPostParam2.ctl00$btnLogout}}" UrlEncode="True" />
+      </FormPostHttpBody>
+    </Request>
+    <Request Method="GET" Guid="d000e7b2-b0f7-4c86-9693-063162fe9a31" Version="1.1" Url="http://13.75.111.18/Web/Member/Login.aspx" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <DependentRequests>
+        <Request Method="GET" Guid="bf0b6a78-76c5-4653-aac2-03e699b069ff" Version="1.1" Url="http://13.75.111.18/fonts/glyphicons-halflings-regular.eot" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Referer" Value="http://13.75.111.18/Web/Member/Login.aspx" />
+          </Headers>
+          <QueryStringParameters>
+            <QueryStringParameter Name="" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+          </QueryStringParameters>
+        </Request>
+      </DependentRequests>
+      <Headers>
+        <Header Name="Referer" Value="http://13.75.111.18/Web/Member/HistoryOrder.aspx" />
+      </Headers>
+    </Request>
+  </Items>
+  <ValidationRules>
+    <ValidationRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ValidateResponseUrl, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" DisplayName="回應 URL" Description="驗證回應 URL 在套用重新導向之後是否和記錄的回應 URL 相同。已忽略 QueryString 參數。" Level="Low" ExectuionOrder="BeforeDependents" />
+    <ValidationRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ValidationRuleResponseTimeGoal, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" DisplayName="回應時間目標" Description="驗證此要求的回應時間是否小於或等於此要求所指定的回應時間目標。回應時間目標為零將被忽略。" Level="Low" ExectuionOrder="AfterDependents">
+      <RuleParameters>
+        <RuleParameter Name="Tolerance" Value="0" />
+      </RuleParameters>
+    </ValidationRule>
+  </ValidationRules>
+</WebTest>
