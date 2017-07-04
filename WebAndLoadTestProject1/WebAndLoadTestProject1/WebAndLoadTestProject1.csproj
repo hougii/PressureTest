@@ -53,6 +53,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="App1_單品漢堡+單品飲料.webtest" />
     <None Include="T01-01單品漢堡+單品飲料.webtest">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
