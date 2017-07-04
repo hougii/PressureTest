@@ -56,13 +56,16 @@
     <None Include="T01-01單品漢堡+單品飲料.webtest">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="T01-02精致套餐.webtest">
+    <None Include="T01-02 精緻套餐.webtest">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="T01-02精致套餐2.webtest">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="T01-02精致套餐3.webtest">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="T01-03 隔日早餐特賣.webtest">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="T01-04 隔日早餐特賣%28飲料換冰拿鐵%29.webtest">
